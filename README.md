@@ -1,3 +1,5 @@
-#Angular2 Template
+#Brian Lee Homepage v2
 
-Angular2 with Typescript, Node and Express
+Homepage with Angular2 Routing
+
+In Progress
