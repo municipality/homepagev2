@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "start": "concurrently \"tsc -w\" \"node ./bin/www\" ",
-    "postinstall": "typings install && tsc"
+    "postinstall": "typings install && tsc",
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css"
   },
   "dependencies": {
     "angular2": "2.0.0-beta.9",
