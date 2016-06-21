@@ -1,4 +1,5 @@
 @import 'loadingmask';
+@import 'animate';
 
 $blue: rgba(52, 152, 219, 1);
 $barWidth: 7em;
@@ -19,6 +20,8 @@ $fontfamily: Roboto, sans-serif;
         -o-transform: $value;
         -moz-transform: $value;
 }
+
+
 
 body {
     margin: 0;
@@ -95,7 +98,23 @@ bar {
 .body-container {
     position: absolute;
     top: 0;
+    right: 0;
     left: $barWidth + 2em;
-    width: 100%;
+    height: 100%;
+}
 
+.home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .image {
+        position: absolute;
+        width: 100%;
+        height: 100em;
+        overflow-y: scroll;
+        background: url('../images/brian-blurred.jpg') no-repeat fixed center;
+        padding-right: 2em;
+        background-size: cover;
+    }
 }

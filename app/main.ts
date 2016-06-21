@@ -1,5 +1,5 @@
 import {bootstrap} from 'angular2/platform/browser';
-import {provide, Component, Injectable} from 'angular2/core';
+import {provide, Component, Injectable, AfterViewInit} from 'angular2/core';
 import {LocationStrategy, PathLocationStrategy, ROUTER_PROVIDERS} from 'angular2/router';
 import {ROUTER_DIRECTIVES, RouteConfig, Router} from 'angular2/router';
 
@@ -26,9 +26,13 @@ import {Designs} from './designs';
     { path: '/**', redirectTo: ['Home'] }
 ])
 
-class App {
+class App implements AfterViewInit {
 
     constructor () {
+    }
+
+    ngAfterViewInit () {
+        document.getElementById("app-loading-mask").style.display = "none";
     }
 
 }

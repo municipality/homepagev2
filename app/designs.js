@@ -23,7 +23,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 }
                 Designs = __decorate([
                     core_1.Component({
-                        template: "\n        <p>Designs</p>\n    "
+                        template: "\n        <div class=\"designs fadeIn\">\n            <p>Designs</p>\n        </div>\n\n    "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], Designs);
@@ -33,4 +33,4 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         }
     }
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVzaWducy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImRlc2lnbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFRQTtnQkFDSTtnQkFFQSxDQUFDO2dCQVRMO29CQUFDLGdCQUFTLENBQUU7d0JBQ1IsUUFBUSxFQUFHLGdDQUVWO3FCQUNKLENBQUM7OzJCQUFBO2dCQU1GLGNBQUM7WUFBRCxDQUFDLEFBSkQsSUFJQztZQUpELDZCQUlDLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NvbXBvbmVudH0gZnJvbSAnYW5ndWxhcjIvY29yZSc7XG5cbkBDb21wb25lbnQgKHtcbiAgICB0ZW1wbGF0ZSA6IGBcbiAgICAgICAgPHA+RGVzaWduczwvcD5cbiAgICBgXG59KVxuXG5leHBvcnQgY2xhc3MgRGVzaWducyB7XG4gICAgY29uc3RydWN0b3IgKCkge1xuICAgICAgICBcbiAgICB9XG59XG4iXX0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGVzaWducy5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImRlc2lnbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7WUFXQTtnQkFDSTtnQkFFQSxDQUFDO2dCQVpMO29CQUFDLGdCQUFTLENBQUU7d0JBQ1IsUUFBUSxFQUFHLDhGQUtWO3FCQUNKLENBQUM7OzJCQUFBO2dCQU1GLGNBQUM7WUFBRCxDQUFDLEFBSkQsSUFJQztZQUpELDZCQUlDLENBQUEiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge0NvbXBvbmVudH0gZnJvbSAnYW5ndWxhcjIvY29yZSc7XG5cbkBDb21wb25lbnQgKHtcbiAgICB0ZW1wbGF0ZSA6IGBcbiAgICAgICAgPGRpdiBjbGFzcz1cImRlc2lnbnMgZmFkZUluXCI+XG4gICAgICAgICAgICA8cD5EZXNpZ25zPC9wPlxuICAgICAgICA8L2Rpdj5cblxuICAgIGBcbn0pXG5cbmV4cG9ydCBjbGFzcyBEZXNpZ25zIHtcbiAgICBjb25zdHJ1Y3RvciAoKSB7XG5cbiAgICB9XG59XG4iXX0=

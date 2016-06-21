@@ -35,6 +35,86 @@
   100% {
     transform: rotate(360deg); } }
 
+.fadeIn {
+  animation: fadein 0.5s;
+  -moz-animation: fadein 0.5s;
+  /* Firefox */
+  -webkit-animation: fadein 0.5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 0.5s;
+  /* Opera */ }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.blurIn {
+  animation: blurIn 0.5s;
+  -moz-animation: blurIn 0.5s;
+  /* Firefox */
+  -webkit-animation: blurIn 0.5s;
+  /* Safari and Chrome */
+  -o-animation: blurIn 0.5s;
+  /* Opera */ }
+
+@keyframes blurIn {
+  from {
+    -webkit-filter: blur(4px);
+    filter: blur(4px); }
+  to {
+    -webkit-filter: 0;
+    filter: 0; } }
+
+@-moz-keyframes blurIn {
+  /* Firefox */
+  from {
+    -webkit-filter: blur(4px);
+    filter: blur(4px); }
+  to {
+    -webkit-filter: 0;
+    filter: 0; } }
+
+@-webkit-keyframes blurIn {
+  /* Safari and Chrome */
+  from {
+    -webkit-filter: blur(4px);
+    filter: blur(4px); }
+  to {
+    -webkit-filter: 0;
+    filter: 0; } }
+
+@-o-keyframes blurIn {
+  /* Opera */
+  from {
+    -webkit-filter: blur(4px);
+    filter: blur(4px); }
+  to {
+    -webkit-filter: 0;
+    filter: 0; } }
+
 body {
   margin: 0;
   font-family: Roboto, sans-serif; }
@@ -99,5 +179,19 @@ bar {
 .body-container {
   position: absolute;
   top: 0;
+  right: 0;
   left: 9em;
-  width: 100%; }
+  height: 100%; }
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .home .image {
+    position: absolute;
+    width: 100%;
+    height: 100em;
+    overflow-y: scroll;
+    background: url("../images/brian-blurred.jpg") no-repeat fixed center;
+    padding-right: 2em;
+    background-size: cover; }
