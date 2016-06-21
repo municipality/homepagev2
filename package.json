@@ -2,9 +2,10 @@
   "name": "angular2-project",
   "version": "0.0.0",
   "scripts": {
-    "start": "concurrently \"tsc -w\" \"node ./bin/www\" ",
+    "start": "concurrently \"tsc -w\" \"node ./bin/www\" \"npm run watch-css\"",
     "postinstall": "typings install && tsc",
-    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css"
+    "build-css": "node-sass --include-path scss scss/main.scss   public/app/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "dependencies": {
     "angular2": "2.0.0-beta.9",

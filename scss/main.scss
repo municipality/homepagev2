@@ -1,0 +1,101 @@
+@import 'loadingmask';
+
+$blue: rgba(52, 152, 219, 1);
+$barWidth: 7em;
+$fontfamily: Roboto, sans-serif;
+
+@mixin transition($comp, $time) {
+    -webkit-transition: $comp $time ease-in-out; /* For Safari 3.1 to 6.0 */
+    -ms-transition: $comp $time ease-in-out;
+    -o-transition: $comp $time ease-in-out;
+    -moz-transition: $comp $time ease-in-out;
+    transition: $comp $time ease-in-out;
+}
+
+@mixin transform($value) {
+    -webkit-transform: $value; /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: $value; /* IE 9 */
+        transform: $value; /* IE 10, Fx 16+, Op 12.1+ */
+        -o-transform: $value;
+        -moz-transform: $value;
+}
+
+body {
+    margin: 0;
+    font-family: $fontfamily;
+}
+
+app {
+    display: block;
+}
+
+bar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: $barWidth;
+    background-color: #1c1c1f;
+    padding: 0 1em;
+
+    .logo {
+        position: relative;
+        width: $barWidth;
+        height: $barWidth;
+        top: 0;
+        left: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        img {
+            position: absolute;
+            width: auto;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .icon {
+        position: relative;
+        width: 80%;
+        height: $barWidth *.8;
+        margin: 1em auto;
+        opacity: .66;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        img {
+            position: relative;
+            display: inline-block;
+            width: auto;
+            height: 80%;
+            left: 50%;
+            @include transform(translate(-50%, 0));
+        }
+
+
+        p {
+            color: white;
+            position: relative;
+            height: 20%;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.body-container {
+    position: absolute;
+    top: 0;
+    left: $barWidth + 2em;
+    width: 100%;
+
+}

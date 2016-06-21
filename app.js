@@ -28,6 +28,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.all('*', function(req, res) {
+  console.log("[TRACE] Server 404 request:" + req.originalUrl);
+  res.status(200).sendFile(path.join(__dirname, 'public/index.html'));
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
