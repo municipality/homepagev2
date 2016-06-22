@@ -119,6 +119,13 @@ body {
   margin: 0;
   font-family: Roboto, sans-serif; }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #3498db; }
+
+h1 {
+  font-weight: 300; }
+
 app {
   display: block; }
 
@@ -131,50 +138,56 @@ bar {
   width: 7em;
   background-color: #1c1c1f;
   padding: 0 1em; }
-  bar .logo {
-    position: relative;
-    width: 7em;
-    height: 7em;
+  bar .container {
+    position: absolute;
     top: 0;
-    left: 0; }
-    bar .logo:hover {
-      cursor: pointer; }
-    bar .logo img {
-      position: absolute;
-      width: auto;
-      height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+    bar .container .logo {
+      position: relative;
+      width: 100%;
       top: 0;
       left: 0; }
-  bar .icon {
-    position: relative;
-    width: 80%;
-    height: 5.6em;
-    margin: 1em auto;
-    opacity: .66; }
-    bar .icon:hover {
-      cursor: pointer;
-      opacity: 1; }
-    bar .icon img {
+      bar .container .logo:hover {
+        cursor: pointer; }
+      bar .container .logo img {
+        width: 100%;
+        height: auto;
+        top: 0;
+        left: 0; }
+    bar .container .icon {
       position: relative;
-      display: inline-block;
-      width: auto;
-      height: 80%;
-      left: 50%;
-      -webkit-transform: translate(-50%, 0);
-      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-      -ms-transform: translate(-50%, 0);
-      /* IE 9 */
-      transform: translate(-50%, 0);
-      /* IE 10, Fx 16+, Op 12.1+ */
-      -o-transform: translate(-50%, 0);
-      -moz-transform: translate(-50%, 0); }
-    bar .icon p {
-      color: white;
-      position: relative;
-      height: 20%;
-      margin: 0;
-      width: 100%;
-      text-align: center; }
+      width: 80%;
+      height: 5.6em;
+      margin: 1em auto;
+      opacity: .5; }
+      bar .container .icon:hover {
+        cursor: pointer;
+        opacity: 1; }
+      bar .container .icon.active {
+        opacity: 1; }
+      bar .container .icon img {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        height: 80%;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: translate(-50%, 0);
+        /* IE 9 */
+        transform: translate(-50%, 0);
+        /* IE 10, Fx 16+, Op 12.1+ */
+        -o-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0); }
+      bar .container .icon p {
+        color: white;
+        position: relative;
+        height: 20%;
+        margin: 0;
+        width: 100%;
+        text-align: center; }
 
 .body-container {
   position: absolute;
@@ -190,8 +203,20 @@ bar {
   .home .image {
     position: absolute;
     width: 100%;
-    height: 100em;
-    overflow-y: scroll;
+    height: 100%;
     background: url("../images/brian-blurred.jpg") no-repeat fixed center;
-    padding-right: 2em;
     background-size: cover; }
+
+.designs .intro {
+  width: 100%;
+  height: 20em;
+  background: url("../images/design-intro.jpg") no-repeat scroll right 0; }
+
+.designs .container {
+  padding: 3em 1em 0 1em;
+  box-shadow: 0 -0.2em 0.7em;
+  -webkit-box-shadow: 0 -0.2em 0.7em;
+  -moz-box-shadow: 0 -0.2em 0.7em; }
+
+.designs .title {
+  margin: 0 0 1em 0; }

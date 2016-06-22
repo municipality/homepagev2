@@ -1,23 +1,24 @@
 import {Component} from 'angular2/core';
-import {ROUTER_DIRECTIVES} from 'angular2/router';
+import {ROUTER_DIRECTIVES, Router} from 'angular2/router';
 @Component ({
     selector : 'bar',
     directives: [ROUTER_DIRECTIVES],
     template : `
-        <div [ngClass]="{'logo': i==0, 'icon': i!=0}" *ngFor="#item of items; #i = index"
-        [routerLink]="[item.name]">
-            <img src={{item.icon}}>
-            <p *ngIf="i != 0">{{item.display}}</p>
+        <div class="container">
+            <div [ngClass]="{'logo': i==0, 'icon': i!=0,
+                             'active': router.isRouteActive(router.generate([item.name])) }"
+            *ngFor="#item of items; #i = index"
+            [routerLink]="[item.name]">
+                <img src={{item.icon}}>
+                <p *ngIf="i != 0">{{item.display}}</p>
+            </div>
         </div>
-
-
     `
 })
 
 export class Bar {
     items : Object[];
-    active;
-    constructor () {
+    constructor (private router : Router) {
         this.items = [
             {
                 name : "Home",
@@ -26,12 +27,23 @@ export class Bar {
                 icon : "icons/brian-icon.png"
             },
             {
+                name : "Blog",
+                display : "BLog",
+                path : "/blog",
+                icon : ""
+            },
+            {
                 name : "Designs",
                 display : "Designs",
                 path : "/designs",
                 icon : ""
+            },
+            {
+                name : "Fashion",
+                display : "Fashion",
+                path : "/fashion",
+                icon : ""
             }
         ];
-        this.active = 0;
     }
 }

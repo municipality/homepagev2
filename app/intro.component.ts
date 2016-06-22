@@ -37,7 +37,6 @@ export class Intro implements AfterViewInit {
     }
 
     ngAfterViewInit () {
-        debugger
     }
 
     introImageLoaded(image) {

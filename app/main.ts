@@ -7,6 +7,11 @@ import {Bar} from './bar.component';
 import {Home} from './home';
 import {Engineer} from './engineer';
 import {Designs} from './designs';
+import {Blog} from './blog';
+import {Fashion} from './fashion';
+
+import {MobileService} from './mobile.service';
+
 
 @Component ({
     selector : 'app',
@@ -21,8 +26,10 @@ import {Designs} from './designs';
 
 @RouteConfig ([
     { path: '/home', component: Home, name: 'Home' },
-    { path: '/engineer', component: Engineer, name: "Engineer"},
+    // { path: '/engineer', component: Engineer, name: "Engineer"},
     { path: '/designs', component: Designs, name: "Designs"},
+    { path: '/fashion', component: Fashion, name: "Fashion"},
+    { path: '/blog', component: Blog, name: "Blog"},
     { path: '/**', redirectTo: ['Home'] }
 ])
 
@@ -40,4 +47,4 @@ class App implements AfterViewInit {
 
 
 
-bootstrap(App, [...ROUTER_PROVIDERS, provide(LocationStrategy, {useClass: PathLocationStrategy})]);
+bootstrap(App, [MobileService, ...ROUTER_PROVIDERS, provide(LocationStrategy, {useClass: PathLocationStrategy})]);
