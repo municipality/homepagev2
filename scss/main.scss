@@ -27,6 +27,24 @@ $barColor: #1c1c1f;
     -moz-box-shadow: $value;
 }
 
+@mixin center($which) {
+    position: absolute;
+
+    @if $which == 'vertical' {
+        top: 50%;
+        @include transform(translate(0, -50%));
+    }
+    @if $which == 'horizontal' {
+        left: 50%;
+        @include transform(translate(-50%, 0));
+    }
+    @if $which == 'both' {
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%, -50%));
+    }
+}
+
 
 
 body {
@@ -37,10 +55,11 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     color: $blue;
+    font-weight: 300;
 }
 
 h1 {
-    font-weight: 300;
+
 }
 
 app {
@@ -150,7 +169,7 @@ bar {
 
     .container {
         padding: 3em 1em 0 1em;
-        @include box-shadow(0 -.2em .7em );
+        @include box-shadow(0 -.2em .7em);
     }
 
     .title {
@@ -160,4 +179,68 @@ bar {
     .description {
     }
 
+}
+
+$seasonsHeaderColor: rgb(235, 235, 235);
+$shadowColor: #d9d9d9;
+.fashion {
+
+    .seasons {
+        position: relative;
+        float: left;
+        width: 20%;
+        @include box-shadow(4px 0 2px 1px $shadowColor);
+        height: 100%;
+
+        .seasons-container {
+            position: relative;
+            .header {
+                position: relative;
+                padding-left: .5em;
+                height: 2em;
+                background-color: $seasonsHeaderColor;
+                h4 {
+                    @include center(vertical);
+                }
+            }
+
+            .season {
+                padding-left: .5em;
+                height: 3em;
+                position: relative;
+                h3 {
+                    @include center(vertical);
+                    position: relative;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.active {
+                    @include fadeIn(.2s);
+                    background-color: $blue;
+                    h3 {
+                        color: white;
+                    }
+                }
+            }
+
+            .season:after{
+                content:'';
+                width: 50%;
+                height: 1px;
+                background: gray;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+
+            }
+        }
+
+
+
+    }
 }
