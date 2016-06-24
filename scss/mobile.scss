@@ -2,7 +2,7 @@
 @import 'animate';
 
 $blue: rgba(52, 152, 219, 1);
-$barWidth: 7em;
+$barWidth: 8%;
 $fontfamily: Roboto, sans-serif;
 $barColor: #1c1c1f;
 @mixin transition($comp, $time) {
@@ -102,7 +102,7 @@ bar {
         .icon {
             position: relative;
             width: 80%;
-            height: $barWidth *.8;
+            height: $barWidth;
             margin: 1em auto;
             opacity: .5;
 
@@ -142,8 +142,9 @@ bar {
     position: absolute;
     top: 0;
     right: 0;
-    left: $barWidth + 2em;
+    left: $barWidth;
     height: 100%;
+    padding-left: 2em;
 }
 
 .home {
@@ -183,18 +184,23 @@ bar {
 
 $seasonsHeaderColor: rgb(235, 235, 235);
 $shadowColor: #d9d9d9;
-$listSize: 10em;
+$listSize: 100%;
+$smallListSize: 45%;
 .fashion {
-
+    position: relative;
+    height: 100%;
     .seasons {
         width: $listSize;
-        position: relative;
+        // position: relative;
         float: left;
         @include box-shadow(4px 0 2px 1px $shadowColor);
         height: 100%;
         overflow: scroll;
         margin-right: 5px;
 
+        &.split {
+            width: $smallListSize;
+        }
         .header {
             position: relative;
             padding-left: .5em;
@@ -250,10 +256,9 @@ $listSize: 10em;
     }
     .styles {
         margin-right: 5px;
-
         float: left;
-        width: $listSize;
-        position: relative;
+        width: $smallListSize;
+        // position: relative;
         @include box-shadow(4px 0 2px 1px $shadowColor);
         height: 100%;
         overflow: scroll;
@@ -305,10 +310,17 @@ $listSize: 10em;
     }
 
     .presentation {
-        position: relative;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
 
         .presentation-header {
-            display: none;
+            width: 100%;
+            background-color: $shadowColor;
+            height: 3em;
         }
     }
 }

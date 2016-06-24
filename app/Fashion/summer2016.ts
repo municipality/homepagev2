@@ -3,24 +3,14 @@ import {ROUTER_DIRECTIVES, RouteConfig, Router, RouteParams} from 'angular2/rout
 import {Http} from 'angular2/http';
 
 import FashionVars = require('./fashion.seasons');
+import {PresentationHeader} from './fashion.components';
+import {SeasonDefault} from './fashion.components';
 
 @Component ({
+    directives : [PresentationHeader],
     template: `
-        <div>
-
-        </div>
-    `
-})
-
-export class SeasonDefault {
-    constructor () {
-
-    }
-}
-
-@Component ({
-    template: `
-        <div>
+        <div class="presentation">
+            <presentation-header></presentation-header>
             <p>Chillin</p>
         </div>
     `

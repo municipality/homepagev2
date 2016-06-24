@@ -5,26 +5,15 @@ import {Http} from 'angular2/http';
 import FashionVars = require('./fashion.seasons');
 import {Summer2016} from './summer2016';
 import {Winter2017} from './winter2017';
+import {SeasonDefault} from './fashion.components';
 
-@Component ({
-    template: `
-        <div>
-
-        </div>
-    `
-})
-
-export class SeasonDefault {
-    constructor () {
-
-    }
-}
 
 @Component ({
     directives: [ROUTER_DIRECTIVES],
     template : `
         <div class="fashion fadeIn">
-            <div class="seasons">
+            <div class="seasons"
+            [ngClass]="{'split': !router.isRouteActive(router.generate(['SeasonDefault']))}">
                 <div class="header">
                     <h4>Seasons</h4>
                 </div>
