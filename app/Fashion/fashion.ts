@@ -3,6 +3,8 @@ import {ROUTER_DIRECTIVES, RouteConfig, Router, RouteParams} from 'angular2/rout
 import {Http} from 'angular2/http';
 
 import FashionVars = require('./fashion.seasons');
+import {Summer2016} from './summer2016';
+import {Winter2017} from './winter2017';
 
 @Component ({
     template: `
@@ -19,32 +21,6 @@ export class SeasonDefault {
 }
 
 @Component ({
-    template: `
-        <div class="styles">
-            <div class="header">
-                <h4>Styles</h4>
-            </div>
-            <div class="style" *ngFor="#style of listItems">
-                <h3>{{style.display}}</h3>
-            </div>
-        </div>
-    `
-})
-
-export class SeasonTemplate {
-    season : string;
-    listItems : string[];
-    seasons;
-
-    constructor (params : RouteParams) {
-        this.seasons = FashionVars.seasonItems;
-        this.season = params.get('season');
-        this.listItems = this.seasons[this.season];
-
-    }
-}
-
-@Component ({
     directives: [ROUTER_DIRECTIVES],
     template : `
         <div class="fashion fadeIn">
@@ -53,8 +29,8 @@ export class SeasonTemplate {
                     <h4>Seasons</h4>
                 </div>
                 <div class="season" *ngFor="#season of seasons"
-                [routerLink]="['SeasonTemplate', {season: season.path}]"
-                [ngClass]="{'active': router.isRouteActive(router.generate(['SeasonTemplate', {season: season.path}]))}">
+                [routerLink]="[season.path]"
+                [ngClass]="{'active': router.isRouteActive(router.generate([season.path]))}">
                     <h3>{{season.name}}</h3>
                 </div>
             </div>
@@ -65,7 +41,8 @@ export class SeasonTemplate {
 
 @RouteConfig([
     { path: '/', component: SeasonDefault, name: "SeasonDefault", useAsDefault: true},
-    { path: '/:season', component: SeasonTemplate, name: "SeasonTemplate"},
+    { path: '/Summer2016/...', component: Summer2016, name: "Summer2016"},
+    { path: '/Winter2017/...', component: Winter2017, name: "Winter2017"},
     { path: '/**', redirectTo: ['SeasonDefault'] }
 ])
 

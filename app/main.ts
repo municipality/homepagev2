@@ -8,7 +8,7 @@ import {Home} from './home';
 import {Engineer} from './engineer';
 import {Designs} from './designs';
 import {Blog} from './blog';
-import {Fashion} from './fashion';
+import {Fashion} from './Fashion/fashion';
 
 import {MobileService} from './mobile.service';
 
