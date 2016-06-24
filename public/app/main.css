@@ -220,67 +220,134 @@ bar {
   margin: 0 0 1em 0; }
 
 .fashion .seasons {
+  min-width: 15em;
   position: relative;
   float: left;
   width: 20%;
   box-shadow: 4px 0 2px 1px #d9d9d9;
   -webkit-box-shadow: 4px 0 2px 1px #d9d9d9;
   -moz-box-shadow: 4px 0 2px 1px #d9d9d9;
-  height: 100%; }
-  .fashion .seasons .seasons-container {
-    position: relative; }
-    .fashion .seasons .seasons-container .header {
-      position: relative;
-      padding-left: .5em;
-      height: 2em;
-      background-color: #ebebeb; }
-      .fashion .seasons .seasons-container .header h4 {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(0, -50%);
-        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-        -ms-transform: translate(0, -50%);
-        /* IE 9 */
-        transform: translate(0, -50%);
-        /* IE 10, Fx 16+, Op 12.1+ */
-        -o-transform: translate(0, -50%);
-        -moz-transform: translate(0, -50%); }
-    .fashion .seasons .seasons-container .season {
-      padding-left: .5em;
-      height: 3em;
-      position: relative; }
-      .fashion .seasons .seasons-container .season h3 {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(0, -50%);
-        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-        -ms-transform: translate(0, -50%);
-        /* IE 9 */
-        transform: translate(0, -50%);
-        /* IE 10, Fx 16+, Op 12.1+ */
-        -o-transform: translate(0, -50%);
-        -moz-transform: translate(0, -50%);
-        position: relative; }
-      .fashion .seasons .seasons-container .season:hover {
-        cursor: pointer; }
-      .fashion .seasons .seasons-container .season.active {
-        animation: fadein 0.2s;
-        -moz-animation: fadein 0.2s;
-        /* Firefox */
-        -webkit-animation: fadein 0.2s;
-        /* Safari and Chrome */
-        -o-animation: fadein 0.2s;
-        /* Opera */
-        background-color: #3498db; }
-        .fashion .seasons .seasons-container .season.active h3 {
-          color: white; }
-    .fashion .seasons .seasons-container .season:after {
-      content: '';
-      width: 50%;
-      height: 1px;
-      background: gray;
+  height: 100%;
+  overflow: scroll; }
+  .fashion .seasons .header {
+    position: relative;
+    padding-left: .5em;
+    height: 2em;
+    background-color: #ebebeb; }
+    .fashion .seasons .header h4 {
       position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto; }
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translate(0, -50%);
+      /* IE 9 */
+      transform: translate(0, -50%);
+      /* IE 10, Fx 16+, Op 12.1+ */
+      -o-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%); }
+  .fashion .seasons .season {
+    padding-left: .5em;
+    height: 3em;
+    position: relative; }
+    .fashion .seasons .season h3 {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translate(0, -50%);
+      /* IE 9 */
+      transform: translate(0, -50%);
+      /* IE 10, Fx 16+, Op 12.1+ */
+      -o-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      position: relative; }
+    .fashion .seasons .season:hover {
+      cursor: pointer; }
+    .fashion .seasons .season.active {
+      animation: fadein 0.2s;
+      -moz-animation: fadein 0.2s;
+      /* Firefox */
+      -webkit-animation: fadein 0.2s;
+      /* Safari and Chrome */
+      -o-animation: fadein 0.2s;
+      /* Opera */
+      background-color: #3498db; }
+      .fashion .seasons .season.active h3 {
+        color: white; }
+  .fashion .seasons .season:after {
+    content: '';
+    width: 50%;
+    height: 1px;
+    background: gray;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto; }
+
+.fashion .styles {
+  padding-left: 5px;
+  float: left;
+  width: 20%;
+  min-width: 15em;
+  position: relative;
+  box-shadow: 4px 0 2px 1px #d9d9d9;
+  -webkit-box-shadow: 4px 0 2px 1px #d9d9d9;
+  -moz-box-shadow: 4px 0 2px 1px #d9d9d9;
+  height: 100%;
+  overflow: scroll; }
+  .fashion .styles .header {
+    position: relative;
+    padding-left: .5em;
+    height: 2em;
+    background-color: #ebebeb; }
+    .fashion .styles .header h4 {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translate(0, -50%);
+      /* IE 9 */
+      transform: translate(0, -50%);
+      /* IE 10, Fx 16+, Op 12.1+ */
+      -o-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%); }
+  .fashion .styles .style {
+    padding-left: .5em;
+    height: 3em;
+    position: relative; }
+    .fashion .styles .style h3 {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translate(0, -50%);
+      /* IE 9 */
+      transform: translate(0, -50%);
+      /* IE 10, Fx 16+, Op 12.1+ */
+      -o-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      position: relative; }
+    .fashion .styles .style:hover {
+      cursor: pointer; }
+    .fashion .styles .style.active {
+      animation: fadein 0.2s;
+      -moz-animation: fadein 0.2s;
+      /* Firefox */
+      -webkit-animation: fadein 0.2s;
+      /* Safari and Chrome */
+      -o-animation: fadein 0.2s;
+      /* Opera */
+      background-color: #3498db; }
+      .fashion .styles .style.active h3 {
+        color: white; }
+  .fashion .styles .style:after {
+    content: '';
+    width: 50%;
+    height: 1px;
+    background: gray;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto; }

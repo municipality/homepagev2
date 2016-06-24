@@ -186,61 +186,117 @@ $shadowColor: #d9d9d9;
 .fashion {
 
     .seasons {
+        min-width: 15em;
         position: relative;
         float: left;
         width: 20%;
         @include box-shadow(4px 0 2px 1px $shadowColor);
         height: 100%;
+        overflow: scroll;
 
-        .seasons-container {
+        .header {
             position: relative;
-            .header {
-                position: relative;
-                padding-left: .5em;
-                height: 2em;
-                background-color: $seasonsHeaderColor;
-                h4 {
-                    @include center(vertical);
-                }
-            }
-
-            .season {
-                padding-left: .5em;
-                height: 3em;
-                position: relative;
-                h3 {
-                    @include center(vertical);
-                    position: relative;
-                }
-
-                &:hover {
-                    cursor: pointer;
-                }
-
-                &.active {
-                    @include fadeIn(.2s);
-                    background-color: $blue;
-                    h3 {
-                        color: white;
-                    }
-                }
-            }
-
-            .season:after{
-                content:'';
-                width: 50%;
-                height: 1px;
-                background: gray;
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                margin: auto;
-
+            padding-left: .5em;
+            height: 2em;
+            background-color: $seasonsHeaderColor;
+            h4 {
+                @include center(vertical);
             }
         }
 
+        .season {
+            padding-left: .5em;
+            height: 3em;
+            position: relative;
+            h3 {
+                @include center(vertical);
+                position: relative;
+            }
 
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.active {
+                @include fadeIn(.2s);
+                background-color: $blue;
+                h3 {
+                    color: white;
+                }
+            }
+        }
+
+        .season:after{
+            content:'';
+            width: 50%;
+            height: 1px;
+            background: gray;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+
+        }
+
+
+
+
+    }
+
+    .styles {
+        padding-left: 5px;
+        float: left;
+        width: 20%;
+        min-width: 15em;
+        position: relative;
+        @include box-shadow(4px 0 2px 1px $shadowColor);
+        height: 100%;
+        overflow: scroll;
+
+        .header {
+            position: relative;
+            padding-left: .5em;
+            height: 2em;
+            background-color: $seasonsHeaderColor;
+            h4 {
+                @include center(vertical);
+            }
+        }
+
+        .style {
+            padding-left: .5em;
+            height: 3em;
+            position: relative;
+            h3 {
+                @include center(vertical);
+                position: relative;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &.active {
+                @include fadeIn(.2s);
+                background-color: $blue;
+                h3 {
+                    color: white;
+                }
+            }
+        }
+
+        .style:after {
+            content:'';
+            width: 50%;
+            height: 1px;
+            background: gray;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
 
     }
 }
