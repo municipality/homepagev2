@@ -290,7 +290,7 @@ $listSize: 10em;
             }
         }
 
-        .style:after {
+        .style::after {
             content:'';
             width: 50%;
             height: 1px;
@@ -311,4 +311,29 @@ $listSize: 10em;
             display: none;
         }
     }
+}
+
+.blog {
+    position: relative;
+    padding : 0 1em;
+    .title {
+        width: 100%;
+        height: 2em;
+        margin: 3em 0 1em 0;
+
+
+    }
+
+    .title::after {
+        content: '';
+        width: 50%;
+        height: 1px;
+        background: gray;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
 }

@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var fs = require('fs');
+
 var users = require('./routes/users');
 
 var app = express();
@@ -27,6 +29,34 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+var router = express.Router();
+
+router.get('/blogentries', function(req, res) {
+    fs.readdir(__dirname + '/app/Blog/Entries', function(err, files) {
+        if(err) throw err;
+        console.log(files);
+        var response = [];
+        for(var i = 0; i < files.length; i++) {
+            var data = fs.readFileSync(__dirname + '/app/Blog/Entries/' + files[i]);
+            data = data.toString();
+            console.log(data);
+            var subject = data.substring(0, data.indexOf('\n'));
+            data = data.substring(data.indexOf('\n') + 1);
+            var date = data.substring(0, data.indexOf('\n'));
+            data = data.substring(data.indexOf('\n') + 1);
+            response.push({
+                subject: subject,
+                date: date,
+                entry: data
+            });
+        }
+        res.json(response);
+    });
+
+});
+
+app.use('/api', router);
 
 app.all('*', function(req, res) {
   console.log("[TRACE] Server 404 request:" + req.originalUrl);
