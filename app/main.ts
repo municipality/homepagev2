@@ -2,6 +2,7 @@ import {bootstrap} from 'angular2/platform/browser';
 import {provide, Component, Injectable, AfterViewInit} from 'angular2/core';
 import {LocationStrategy, PathLocationStrategy, ROUTER_PROVIDERS} from 'angular2/router';
 import {ROUTER_DIRECTIVES, RouteConfig, Router} from 'angular2/router';
+import {HTTP_BINDINGS} from 'angular2/http';
 
 import {Bar} from './bar.component';
 import {Home} from './home';
@@ -47,4 +48,4 @@ class App implements AfterViewInit {
 
 
 
-bootstrap(App, [MobileService, ...ROUTER_PROVIDERS, provide(LocationStrategy, {useClass: PathLocationStrategy})]);
+bootstrap(App, [HTTP_BINDINGS, MobileService, ...ROUTER_PROVIDERS, provide(LocationStrategy, {useClass: PathLocationStrategy})]);

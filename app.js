@@ -40,17 +40,25 @@ router.get('/blogentries', function(req, res) {
         for(var i = 0; i < files.length; i++) {
             var data = fs.readFileSync(__dirname + '/app/Blog/Entries/' + files[i]);
             data = data.toString();
-            console.log(data);
-            var subject = data.substring(0, data.indexOf('\n'));
+            var title = data.substring(0, data.indexOf('\n'));
+            //index + 1 to remove the \n from the line
             data = data.substring(data.indexOf('\n') + 1);
             var date = data.substring(0, data.indexOf('\n'));
             data = data.substring(data.indexOf('\n') + 1);
+            data = data.replace(/\n/g, "<br/>");
             response.push({
-                subject: subject,
+                title: title,
                 date: date,
                 entry: data
             });
         }
+        //sort blogs by date (newest first)
+        response.sort(function(a,b) {
+            var first = new Date(a.date);
+            var second = new Date(b.date);
+            return second.getTime() - first.getTime();
+        });
+        
         res.json(response);
     });
 
