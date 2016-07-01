@@ -7,6 +7,7 @@ import {PresentationHeader} from './fashion.components';
 import {SeasonDefault} from './fashion.components';
 
 @Component ({
+    selector : 'summer2016chillin',
     directives : [PresentationHeader],
     template: `
         <div class="presentation summer2016chillin">
@@ -26,7 +27,9 @@ export class Summer2016Chillin {
 
 
 @Component ({
+    selector : 'styles',
     template: `
+        <div class="styles-container">
         <div class="styles">
             <div class="header">
                 <h4>Styles</h4>
@@ -37,9 +40,11 @@ export class Summer2016Chillin {
                 <h3>{{style.display}}</h3>
             </div>
         </div>
+        </div>
         <div class="presentation-router-container">
             <router-outlet></router-outlet>
         </div>
+
     `,
     directives: [ROUTER_DIRECTIVES]
 })

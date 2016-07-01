@@ -223,158 +223,183 @@ bar {
   display: table;
   width: 100%;
   height: 100%; }
-  .fashion .seasons {
-    width: 20%;
-    position: relative;
-    box-shadow: 4px 0 2px 1px #d9d9d9;
-    -webkit-box-shadow: 4px 0 2px 1px #d9d9d9;
-    -moz-box-shadow: 4px 0 2px 1px #d9d9d9;
+  .fashion .fashion-row {
+    display: table-row; }
+  .fashion .seasons-container {
     height: 100%;
-    overflow: scroll;
-    margin-right: 5px;
-    display: table-cell; }
-    .fashion .seasons .header {
-      position: relative;
-      padding-left: .5em;
-      height: 2em;
-      background-color: #ebebeb; }
-      .fashion .seasons .header h4 {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(0, -50%);
-        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-        -ms-transform: translate(0, -50%);
-        /* IE 9 */
-        transform: translate(0, -50%);
-        /* IE 10, Fx 16+, Op 12.1+ */
-        -o-transform: translate(0, -50%);
-        -moz-transform: translate(0, -50%); }
-    .fashion .seasons .season {
-      padding-left: .5em;
-      height: 3em;
-      position: relative; }
-      .fashion .seasons .season h3 {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(0, -50%);
-        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-        -ms-transform: translate(0, -50%);
-        /* IE 9 */
-        transform: translate(0, -50%);
-        /* IE 10, Fx 16+, Op 12.1+ */
-        -o-transform: translate(0, -50%);
-        -moz-transform: translate(0, -50%);
-        position: relative; }
-      .fashion .seasons .season:hover {
-        cursor: pointer; }
-      .fashion .seasons .season.active {
-        animation: fadein 0.2s;
-        -moz-animation: fadein 0.2s;
-        /* Firefox */
-        -webkit-animation: fadein 0.2s;
-        /* Safari and Chrome */
-        -o-animation: fadein 0.2s;
-        /* Opera */
-        background-color: #3498db; }
-        .fashion .seasons .season.active h3 {
-          color: white; }
-    .fashion .seasons .season:after {
-      content: '';
-      width: 50%;
-      height: 1px;
-      background: gray;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto; }
-  .fashion .styles-router-container {
-    position: absolute;
+    width: 15em;
+    padding-right: 5px;
     display: table-cell;
-    width: 80%;
-    height: 100%;
-    margin-left: 5px; }
-  .fashion .styles {
-    margin-right: 5px;
-    display: inline-block;
-    width: 20%;
-    box-shadow: 4px 0 2px 1px #d9d9d9;
-    -webkit-box-shadow: 4px 0 2px 1px #d9d9d9;
-    -moz-box-shadow: 4px 0 2px 1px #d9d9d9;
-    height: 100%;
-    overflow: scroll; }
-    .fashion .styles .header {
+    vertical-align: top; }
+    .fashion .seasons-container .seasons {
       position: relative;
-      padding-left: .5em;
-      height: 2em;
-      background-color: #ebebeb; }
-      .fashion .styles .header h4 {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(0, -50%);
-        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-        -ms-transform: translate(0, -50%);
-        /* IE 9 */
-        transform: translate(0, -50%);
-        /* IE 10, Fx 16+, Op 12.1+ */
-        -o-transform: translate(0, -50%);
-        -moz-transform: translate(0, -50%); }
-    .fashion .styles .style {
-      padding-left: .5em;
-      height: 3em;
-      position: relative; }
-      .fashion .styles .style h3 {
-        position: absolute;
-        top: 50%;
-        -webkit-transform: translate(0, -50%);
-        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-        -ms-transform: translate(0, -50%);
-        /* IE 9 */
-        transform: translate(0, -50%);
-        /* IE 10, Fx 16+, Op 12.1+ */
-        -o-transform: translate(0, -50%);
-        -moz-transform: translate(0, -50%);
+      box-shadow: 4px 0 2px 1px #d9d9d9;
+      -webkit-box-shadow: 4px 0 2px 1px #d9d9d9;
+      -moz-box-shadow: 4px 0 2px 1px #d9d9d9;
+      height: 100%;
+      overflow: scroll;
+      margin-right: 5px;
+      width: 100%; }
+      .fashion .seasons-container .seasons .header {
+        position: relative;
+        padding-left: .5em;
+        height: 2em;
+        background-color: #ebebeb; }
+        .fashion .seasons-container .seasons .header h4 {
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translate(0, -50%);
+          /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: translate(0, -50%);
+          /* IE 9 */
+          transform: translate(0, -50%);
+          /* IE 10, Fx 16+, Op 12.1+ */
+          -o-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%); }
+      .fashion .seasons-container .seasons .season {
+        padding-left: .5em;
+        height: 3em;
         position: relative; }
-      .fashion .styles .style:hover {
-        cursor: pointer; }
-      .fashion .styles .style.active {
-        animation: fadein 0.2s;
-        -moz-animation: fadein 0.2s;
-        /* Firefox */
-        -webkit-animation: fadein 0.2s;
-        /* Safari and Chrome */
-        -o-animation: fadein 0.2s;
-        /* Opera */
-        background-color: #3498db; }
-        .fashion .styles .style.active h3 {
-          color: white; }
-    .fashion .styles .style::after {
-      content: '';
-      width: 50%;
-      height: 1px;
-      background: gray;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin: auto; }
+        .fashion .seasons-container .seasons .season h3 {
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translate(0, -50%);
+          /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: translate(0, -50%);
+          /* IE 9 */
+          transform: translate(0, -50%);
+          /* IE 10, Fx 16+, Op 12.1+ */
+          -o-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          position: relative; }
+        .fashion .seasons-container .seasons .season:hover {
+          cursor: pointer; }
+        .fashion .seasons-container .seasons .season.active {
+          animation: fadein 0.2s;
+          -moz-animation: fadein 0.2s;
+          /* Firefox */
+          -webkit-animation: fadein 0.2s;
+          /* Safari and Chrome */
+          -o-animation: fadein 0.2s;
+          /* Opera */
+          background-color: #3498db; }
+          .fashion .seasons-container .seasons .season.active h3 {
+            color: white; }
+      .fashion .seasons-container .seasons .season:after {
+        content: '';
+        width: 50%;
+        height: 1px;
+        background: gray;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto; }
+  .fashion .styles-router-container {
+    display: table-cell;
+    height: 100%;
+    margin-left: 5px;
+    vertical-align: top; }
+  .fashion styles {
+    display: table;
+    height: 100%;
+    width: 100%; }
+  .fashion .styles-container {
+    height: 100%;
+    width: 15em;
+    display: table-cell;
+    padding-right: 5px;
+    vertical-align: top; }
+    .fashion .styles-container .styles {
+      margin-right: 5px;
+      width: 100%;
+      box-shadow: 4px 0 2px 1px #d9d9d9;
+      -webkit-box-shadow: 4px 0 2px 1px #d9d9d9;
+      -moz-box-shadow: 4px 0 2px 1px #d9d9d9;
+      height: 100%;
+      overflow: scroll; }
+      .fashion .styles-container .styles .header {
+        position: relative;
+        padding-left: .5em;
+        height: 2em;
+        background-color: #ebebeb; }
+        .fashion .styles-container .styles .header h4 {
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translate(0, -50%);
+          /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: translate(0, -50%);
+          /* IE 9 */
+          transform: translate(0, -50%);
+          /* IE 10, Fx 16+, Op 12.1+ */
+          -o-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%); }
+      .fashion .styles-container .styles .style {
+        padding-left: .5em;
+        height: 3em;
+        position: relative; }
+        .fashion .styles-container .styles .style h3 {
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translate(0, -50%);
+          /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: translate(0, -50%);
+          /* IE 9 */
+          transform: translate(0, -50%);
+          /* IE 10, Fx 16+, Op 12.1+ */
+          -o-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%);
+          position: relative; }
+        .fashion .styles-container .styles .style:hover {
+          cursor: pointer; }
+        .fashion .styles-container .styles .style.active {
+          animation: fadein 0.2s;
+          -moz-animation: fadein 0.2s;
+          /* Firefox */
+          -webkit-animation: fadein 0.2s;
+          /* Safari and Chrome */
+          -o-animation: fadein 0.2s;
+          /* Opera */
+          background-color: #3498db; }
+          .fashion .styles-container .styles .style.active h3 {
+            color: white; }
+      .fashion .styles-container .styles .style::after {
+        content: '';
+        width: 50%;
+        height: 1px;
+        background: gray;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto; }
   .fashion .presentation-router-container {
-    display: inline-block;
-    position: absolute;
+    display: table-cell;
     height: 100%;
-    width: 100%; }
+    vertical-align: top; }
   .fashion .presentation {
-    position: absolute;
-    height: 100%;
-    width: 100%; }
+    height: 100%; }
     .fashion .presentation .presentation-header {
       display: none; }
-    .fashion .presentation.summer2016chillin {
-      padding: 0px 5em; }
-      .fashion .presentation.summer2016chillin p {
-        margin: 0; }
-      .fashion .presentation.summer2016chillin .header {
-        position: relative; }
+    .fashion .presentation.summer2016chillin p {
+      margin: 0; }
+    .fashion .presentation.summer2016chillin .header {
+      position: relative; }
+    .fashion .presentation.summer2016chillin .header::after {
+      content: '';
+      width: 50%;
+      height: 1px;
+      background: gray;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto; }
+  .fashion summer2016chillin {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: scroll; }
 
 .blog {
   position: relative;

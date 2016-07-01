@@ -12,6 +12,8 @@ import {SeasonDefault} from './fashion.components';
     directives: [ROUTER_DIRECTIVES],
     template : `
         <div class="fashion fadeIn">
+            <div class="fashion-row">
+            <div class="seasons-container">
             <div class="seasons"
             [ngClass]="{'split': !router.isRouteActive(router.generate(['SeasonDefault']))}">
                 <div class="header">
@@ -23,10 +25,13 @@ import {SeasonDefault} from './fashion.components';
                     <h3>{{season.name}}</h3>
                 </div>
             </div>
+            </div>
             <div class="styles-router-container">
                 <router-outlet></router-outlet>
             </div>
+            </div>
         </div>
+
     `
 })
 
