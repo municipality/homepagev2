@@ -23,7 +23,9 @@ import {SeasonDefault} from './fashion.components';
                     <h3>{{season.name}}</h3>
                 </div>
             </div>
-            <router-outlet></router-outlet>
+            <div class="styles-router-container">
+                <router-outlet></router-outlet>
+            </div>
         </div>
     `
 })

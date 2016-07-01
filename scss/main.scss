@@ -183,17 +183,21 @@ bar {
 
 $seasonsHeaderColor: rgb(235, 235, 235);
 $shadowColor: #d9d9d9;
-$listSize: 10em;
+$listSize: 20%;
 .fashion {
+    display: table;
+    width: 100%;
+    height: 100%;
 
     .seasons {
         width: $listSize;
         position: relative;
-        float: left;
         @include box-shadow(4px 0 2px 1px $shadowColor);
         height: 100%;
         overflow: scroll;
         margin-right: 5px;
+        display: table-cell;
+
 
         .header {
             position: relative;
@@ -244,16 +248,22 @@ $listSize: 10em;
 
 
     }
-    .styles-container {
-        position: relative;
 
+
+    // Router container for styles and presentation
+    .styles-router-container {
+        position: absolute;
+        display: table-cell;
+        width: 80%;
+        height: 100%;
+        margin-left: 5px;
     }
+
     .styles {
         margin-right: 5px;
+        display: inline-block;
 
-        float: left;
         width: $listSize;
-        position: relative;
         @include box-shadow(4px 0 2px 1px $shadowColor);
         height: 100%;
         overflow: scroll;
@@ -304,13 +314,36 @@ $listSize: 10em;
 
     }
 
+    .presentation-router-container {
+        display: inline-block;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
     .presentation {
-        position: relative;
+        position: absolute;
+        height: 100%;
+        width: 100%;
 
         .presentation-header {
             display: none;
         }
+
+        &.summer2016chillin {
+            padding: 0px 5em;
+            p {
+                margin: 0;
+            }
+
+            .header {
+                position: relative;
+            }
+
+
+        }
     }
+
+
 }
 
 .blog {

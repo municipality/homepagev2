@@ -9,9 +9,11 @@ import {SeasonDefault} from './fashion.components';
 @Component ({
     directives : [PresentationHeader],
     template: `
-        <div class="presentation">
+        <div class="presentation summer2016chillin">
             <presentation-header></presentation-header>
-            <p>Chillin</p>
+            <h1 class="header" align="center">Chillin</h1>
+
+            <img src="brian-blurred.jpg">
         </div>
     `
 })
@@ -35,7 +37,9 @@ export class Summer2016Chillin {
                 <h3>{{style.display}}</h3>
             </div>
         </div>
-        <router-outlet></router-outlet>
+        <div class="presentation-router-container">
+            <router-outlet></router-outlet>
+        </div>
     `,
     directives: [ROUTER_DIRECTIVES]
 })
