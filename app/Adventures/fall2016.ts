@@ -26,7 +26,7 @@ export class SeasonDefault {
     `
 })
 
-export class Winter2017Cool {
+export class Fall2016Cool {
     constructor () {
 
     }
@@ -56,18 +56,18 @@ export class Winter2017Cool {
 })
 
 @RouteConfig([
-    { path: '/', component: SeasonDefault, name: "Winter2017Default", useAsDefault: true},
+    { path: '/', component: SeasonDefault, name: "Fall2016Default", useAsDefault: true},
     // { path: '/Cool', component: Winter2017Cool, name: 'Winter2017Cool'},
-    { path: '/**', redirectTo: ['Winter2017Default']}
+    { path: '/**', redirectTo: ['Fall2016Default']}
 ])
-export class Winter2017 {
+export class Fall2016 {
     season : string;
     listItems : string[];
     seasons;
 
     constructor (params : RouteParams, private router:Router) {
         this.seasons = FashionVars.seasonItems;
-        this.season = "Winter2017";
+        this.season = "Fall2016";
         this.listItems = this.seasons[this.season];
 
     }

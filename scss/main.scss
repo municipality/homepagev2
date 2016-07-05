@@ -5,6 +5,7 @@ $blue: rgba(52, 152, 219, 1);
 $barWidth: 7em;
 $fontfamily: Roboto, sans-serif;
 $barColor: #1c1c1f;
+
 @mixin transition($comp, $time) {
     -webkit-transition: $comp $time ease-in-out; /* For Safari 3.1 to 6.0 */
     -ms-transition: $comp $time ease-in-out;
@@ -207,6 +208,11 @@ bar {
                 background-color: rgba(255, 255, 255, .7);
                 color:  $blue;
             }
+
+            h1:hover {
+                @include transform(scale(1.2));
+                @include transition(all, .1s);
+            }
         }
     }
 }
@@ -285,7 +291,7 @@ $listSize: 15em;
                 &.active {
                     @include fadeIn(.2s);
                     background-color: $blue;
-                    h3 {
+                    h1, h2, h3, h4, h5, h6 {
                         color: white;
                     }
                 }
@@ -598,10 +604,6 @@ $listSize: 15em;
                 padding-left: .5em;
                 height: 3em;
                 position: relative;
-                h3 {
-                    @include center(vertical);
-                    position: relative;
-                }
 
                 &:hover {
                     cursor: pointer;
@@ -610,10 +612,15 @@ $listSize: 15em;
                 &.active {
                     @include fadeIn(.2s);
                     background-color: $blue;
-                    h3 {
+                    h1, h2, h3, h4, h5, h6 {
                         color: white;
                     }
                 }
+
+                .event-name-container {
+                    @include center(vertical);
+                }
+
             }
 
             .event::after {

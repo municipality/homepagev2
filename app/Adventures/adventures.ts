@@ -6,7 +6,7 @@ import AdventuresVars = require('./adventures.seasons');
 import {Summer2016} from './summer2016';
 import {Winter2017} from './winter2017';
 import {SeasonDefault} from './adventures.components';
-
+import {Fall2016} from './fall2016';
 
 @Component ({
     directives: [ROUTER_DIRECTIVES],
@@ -38,6 +38,7 @@ import {SeasonDefault} from './adventures.components';
 @RouteConfig([
     { path: '/', component: SeasonDefault, name: "SeasonDefault", useAsDefault: true},
     { path: '/Summer2016/...', component: Summer2016, name: "Summer2016"},
+    { path: '/Fall2016/...', component: Fall2016, name: "Fall2016"},
     { path: '/Winter2017/...', component: Winter2017, name: "Winter2017"},
     { path: '/**', redirectTo: ['SeasonDefault'] }
 ])

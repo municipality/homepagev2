@@ -27,23 +27,24 @@ export class Bar {
                 icon : "icons/brian-icon.png"
             },
             {
-                name : "Blog",
-                display : "BLog",
-                path : "/blog",
-                icon : ""
-            },
-            {
-                name : "Designs",
-                display : "Designs",
-                path : "/designs",
-                icon : ""
-            },
-            {
                 name : "Adventures",
                 display : "Adventures",
                 path : "/adventures",
                 icon : ""
-            }
+            },
+            {
+                name : "Blog",
+                display : "B Log",
+                path : "/blog",
+                icon : ""
+            },
+            {
+                name : "Projects",
+                display : "Projects",
+                path : "/projects",
+                icon : ""
+            },
+
         ];
     }
 }

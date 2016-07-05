@@ -252,6 +252,21 @@ bar {
       .home .titles-container .titles .white {
         background-color: rgba(255, 255, 255, 0.7);
         color: #3498db; }
+      .home .titles-container .titles h1:hover {
+        -webkit-transform: scale(1.2);
+        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: scale(1.2);
+        /* IE 9 */
+        transform: scale(1.2);
+        /* IE 10, Fx 16+, Op 12.1+ */
+        -o-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transition: all 0.1s ease-in-out;
+        /* For Safari 3.1 to 6.0 */
+        -ms-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
 
 .designs .intro {
   width: 100%;
@@ -331,7 +346,7 @@ bar {
           -o-animation: fadein 0.2s;
           /* Opera */
           background-color: #3498db; }
-          .fashion .seasons-container .seasons .season.active h3 {
+          .fashion .seasons-container .seasons .season.active h1, .fashion .seasons-container .seasons .season.active h2, .fashion .seasons-container .seasons .season.active h3, .fashion .seasons-container .seasons .season.active h4, .fashion .seasons-container .seasons .season.active h5, .fashion .seasons-container .seasons .season.active h6 {
             color: white; }
       .fashion .seasons-container .seasons .season:after {
         content: '';
@@ -601,18 +616,6 @@ bar {
         padding-left: .5em;
         height: 3em;
         position: relative; }
-        .adventures .events-container .events .event h3 {
-          position: absolute;
-          top: 50%;
-          -webkit-transform: translate(0, -50%);
-          /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-          -ms-transform: translate(0, -50%);
-          /* IE 9 */
-          transform: translate(0, -50%);
-          /* IE 10, Fx 16+, Op 12.1+ */
-          -o-transform: translate(0, -50%);
-          -moz-transform: translate(0, -50%);
-          position: relative; }
         .adventures .events-container .events .event:hover {
           cursor: pointer; }
         .adventures .events-container .events .event.active {
@@ -624,8 +627,19 @@ bar {
           -o-animation: fadein 0.2s;
           /* Opera */
           background-color: #3498db; }
-          .adventures .events-container .events .event.active h3 {
+          .adventures .events-container .events .event.active h1, .adventures .events-container .events .event.active h2, .adventures .events-container .events .event.active h3, .adventures .events-container .events .event.active h4, .adventures .events-container .events .event.active h5, .adventures .events-container .events .event.active h6 {
             color: white; }
+        .adventures .events-container .events .event .event-name-container {
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translate(0, -50%);
+          /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: translate(0, -50%);
+          /* IE 9 */
+          transform: translate(0, -50%);
+          /* IE 10, Fx 16+, Op 12.1+ */
+          -o-transform: translate(0, -50%);
+          -moz-transform: translate(0, -50%); }
       .adventures .events-container .events .event::after {
         content: '';
         width: 50%;
