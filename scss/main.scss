@@ -27,6 +27,21 @@ $barColor: #1c1c1f;
     -moz-box-shadow: $value;
 }
 
+@mixin flexbox() {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;
+}
+
+@mixin flex($value) {
+    flex: $value;
+    -webkit-flex: $value;
+    -ms-flex: $value;
+    -moz-flex: $value;
+}
+
 @mixin center($which) {
     position: absolute;
 
@@ -150,13 +165,49 @@ bar {
     position: relative;
     width: 100%;
     height: 100%;
+    background: url('../images/brian-blurred.jpg') no-repeat fixed center;
+    background-size: cover;
+    @include flexbox();
+    flex-direction: row;
 
-    .image {
-        position: absolute;
-        width: 100%;
+    .icon-container {
+        position: relative;
+        @include flex(1);
         height: 100%;
-        background: url('../images/brian-blurred.jpg') no-repeat fixed center;
-        background-size: cover;
+
+        .icon {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            max-width: 20em;
+            margin: auto;
+        }
+    }
+
+    .titles-container {
+        @include flex(1);
+        height: 100%;
+        position: relative;
+
+
+        .titles {
+            position: absolute;
+            @include center('vertical');
+
+            .blue {
+                background-color: rgba(52, 152, 219, .7);
+                color: white;
+            }
+
+            .white {
+                background-color: rgba(255, 255, 255, .7);
+                color:  $blue;
+            }
+        }
     }
 }
 

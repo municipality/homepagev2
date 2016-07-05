@@ -4,18 +4,16 @@ import {Component, AfterViewInit, ViewChild} from 'angular2/core';
 @Component ({
     template : `
         <div class="home fadeIn">
-            <div #image class="image">
-            </div>
-            <!--<div class="intro-icon-container">
-                <img class="intro-icon" src="images/brian-icon-2.png">
+            <div class="icon-container">
+                <img class="icon" src="images/brian-icon-2.png">
             </div>
             <div class="titles-container">
                 <div class="titles">
-                    <h2 class="blue">Software Engineer</h2>
-                    <h2 class="white">Designer</h2>
-                    <h2 class="blue">Dreamer</h2>
+                    <h1 class="blue">Software Engineer</h1>
+                    <h1 class="white">Designer</h1>
+                    <h1 class="blue">Dreamer</h1>
                 </div>
-            </div>-->
+            </div>
         </div>
     `
 })
