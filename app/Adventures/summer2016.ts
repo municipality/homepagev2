@@ -2,9 +2,9 @@ import {Component, Input} from 'angular2/core';
 import {ROUTER_DIRECTIVES, RouteConfig, Router, RouteParams} from 'angular2/router';
 import {Http} from 'angular2/http';
 
-import FashionVars = require('./fashion.seasons');
-import {PresentationHeader} from './fashion.components';
-import {SeasonDefault} from './fashion.components';
+import AdventuresVars = require('./adventures.seasons');
+import {PresentationHeader} from './adventures.components';
+import {SeasonDefault} from './adventures.components';
 
 @Component ({
     selector : 'summer2016losangeles',
@@ -27,14 +27,14 @@ export class Summer2016LosAngeles {
 
 
 @Component ({
-    selector : 'styles',
+    selector : 'events',
     template: `
-        <div class="styles-container">
-        <div class="styles">
+        <div class="events-container">
+        <div class="events">
             <div class="header">
-                <h4>Styles</h4>
+                <h4>Adventure</h4>
             </div>
-            <div class="style" *ngFor="#style of listItems"
+            <div class="event" *ngFor="#style of listItems"
             [routerLink]="[style.path]"
             [ngClass]="{'active': router.isRouteActive(router.generate([style.path]))}">
                 <h3>{{style.display}}</h3>
@@ -60,7 +60,7 @@ export class Summer2016 {
     seasons;
 
     constructor (params : RouteParams, private router:Router) {
-        this.seasons = FashionVars.seasonItems;
+        this.seasons = AdventuresVars.seasonItems;
         this.season = "Summer2016";
         this.listItems = this.seasons[this.season];
 

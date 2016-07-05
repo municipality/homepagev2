@@ -12,7 +12,9 @@ export var seasonItems = {
     Summer2016 : [
         {
             display: "Los Angeles",
-            path: "Summer2016LosAngeles"
+            path: "Summer2016LosAngeles",
+            dateStart: "July 1, 2016",
+            dateEnd: "July 3, 2016"
         }
     ],
     Winter2017 : [

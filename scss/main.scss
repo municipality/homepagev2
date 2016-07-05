@@ -265,8 +265,6 @@ $listSize: 15em;
     .styles-router-container {
         display: table-cell;
         height: 100%;
-        margin-left: 5px;
-        vertical-align: top;
     }
 
     styles {
@@ -279,7 +277,6 @@ $listSize: 15em;
         width: $listSize;
         display: table-cell;
         padding-right: 5px;
-        vertical-align: top;
         .styles {
             margin-right: 5px;
             width: 100%;
@@ -348,7 +345,7 @@ $listSize: 15em;
             display: none;
         }
 
-        &.summer2016chillin {
+        &.summer2016losangeles {
             p {
                 margin: 0;
             }
@@ -371,7 +368,7 @@ $listSize: 15em;
         }
     }
 
-    summer2016chillin {
+    summer2016losangeles {
         display: block;
         height: 100%;
         width: 100%;
@@ -433,5 +430,199 @@ $listSize: 15em;
             padding: 0 2em 0 2em;
         }
     }
+
+}
+
+.adventures {
+    display: table;
+    width: 100%;
+    height: 100%;
+    .adventures-row {
+        display: table-row;
+    }
+
+    .seasons-container {
+        height: 100%;
+        width: $listSize;
+        padding-right: 5px;
+
+        display: table-cell;
+        vertical-align: top;
+        .seasons {
+            position: relative;
+            @include box-shadow(4px 0 2px 1px $shadowColor);
+            height: 100%;
+            overflow: scroll;
+            margin-right: 5px;
+            width: 100%;
+
+
+            .header {
+                position: relative;
+                padding-left: .5em;
+                height: 2em;
+                background-color: $seasonsHeaderColor;
+                h4 {
+                    @include center(vertical);
+                }
+            }
+
+            .season {
+                padding-left: .5em;
+                height: 3em;
+                position: relative;
+                h3 {
+                    @include center(vertical);
+                    position: relative;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.active {
+                    @include fadeIn(.2s);
+                    background-color: $blue;
+                    h3 {
+                        color: white;
+                    }
+                }
+            }
+
+            .season:after{
+                content:'';
+                width: 50%;
+                height: 1px;
+                background: gray;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+
+            }
+
+
+
+
+        }
+    }
+
+
+
+    // Router container for styles and presentation
+    .events-router-container {
+        display: table-cell;
+        height: 100%;
+    }
+
+    events {
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+    .events-container {
+        height: 100%;
+        width: $listSize;
+        display: table-cell;
+        padding-right: 5px;
+        .events {
+            margin-right: 5px;
+            width: 100%;
+            @include box-shadow(4px 0 2px 1px $shadowColor);
+            height: 100%;
+            overflow: scroll;
+
+            .header {
+                position: relative;
+                padding-left: .5em;
+                height: 2em;
+                background-color: $seasonsHeaderColor;
+                h4 {
+                    @include center(vertical);
+                }
+            }
+
+            .event {
+                padding-left: .5em;
+                height: 3em;
+                position: relative;
+                h3 {
+                    @include center(vertical);
+                    position: relative;
+                }
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &.active {
+                    @include fadeIn(.2s);
+                    background-color: $blue;
+                    h3 {
+                        color: white;
+                    }
+                }
+            }
+
+            .event::after {
+                content:'';
+                width: 50%;
+                height: 1px;
+                background: gray;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+            }
+
+        }
+    }
+
+
+    .presentation-router-container {
+        display: table-cell;
+        height: 100%;
+        vertical-align: top;
+    }
+
+    .presentation {
+        height: 100%;
+
+        .presentation-header {
+            display: none;
+        }
+
+        &.summer2016losangeles {
+            p {
+                margin: 0;
+            }
+
+            .header {
+                position: relative;
+            }
+            .header::after {
+                content: '';
+                width: 50%;
+                height: 1px;
+                background: gray;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+            }
+
+        }
+    }
+
+    summer2016losangeles {
+        display: block;
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+    }
+
 
 }

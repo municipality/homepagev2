@@ -13,6 +13,8 @@ import {Fashion} from './Fashion/fashion';
 
 import {MobileService} from './mobile.service';
 
+import {Adventures} from './Adventures/adventures';
+
 
 @Component ({
     selector : 'app',
@@ -29,7 +31,8 @@ import {MobileService} from './mobile.service';
     { path: '/home', component: Home, name: 'Home' },
     // { path: '/engineer', component: Engineer, name: "Engineer"},
     { path: '/designs', component: Designs, name: "Designs"},
-    { path: '/fashion/...', component: Fashion, name: "Fashion"},
+    // { path: '/fashion/...', component: Fashion, name: "Fashion"},
+    { path: '/adventures/...', component: Adventures, name: "Adventures"},
     { path: '/blog', component: Blog, name: "Blog"},
     { path: '/**', redirectTo: ['Home'] }
 ])

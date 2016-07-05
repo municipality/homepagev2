@@ -39,9 +39,9 @@ export class Bar {
                 icon : ""
             },
             {
-                name : "Fashion",
-                display : "Fashion",
-                path : "/fashion",
+                name : "Adventures",
+                display : "Adventures",
+                path : "/adventures",
                 icon : ""
             }
         ];
