@@ -145,7 +145,6 @@ bar {
             }
 
             [class^="icon-"]:before, [class*=" icon-"]:before {
-                position: relative;
                 @include center('both');
             }
 

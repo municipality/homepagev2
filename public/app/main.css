@@ -183,7 +183,6 @@ bar {
         -moz-transform: translate(-50%, 0);
         width: 100%; }
       bar .container .icon [class^="icon-"]:before, bar .container .icon [class*=" icon-"]:before {
-        position: relative;
         position: absolute;
         top: 50%;
         left: 50%;
