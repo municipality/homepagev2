@@ -1,6 +1,3 @@
-
-
-
 @import 'loadingmask';
 @import 'animate';
 
@@ -85,6 +82,7 @@ app {
     display: block;
 }
 
+$barIconSize : 50;
 bar {
     display: block;
     position: fixed;
@@ -134,14 +132,23 @@ bar {
                 opacity: 1;
             }
 
-            img {
+            .icon-sym {
+                color: white;
+                font-size: $barIconSize;
+                margin: 0;
                 position: relative;
                 display: inline-block;
-                width: auto;
                 height: 80%;
                 left: 50%;
                 @include transform(translate(-50%, 0));
+                width:100%;
             }
+
+            [class^="icon-"]:before, [class*=" icon-"]:before {
+                position: relative;
+                @include center('both');
+            }
+
 
 
             p {
@@ -154,6 +161,7 @@ bar {
             }
         }
     }
+
 
 }
 
@@ -562,9 +570,6 @@ $listSize: 15em;
 
             }
 
-
-
-
         }
     }
 
@@ -572,7 +577,7 @@ $listSize: 15em;
 
     // Router container for styles and presentation
     .events-router-container {
-        display: table-cell;
+        display: block;
         height: 100%;
     }
 

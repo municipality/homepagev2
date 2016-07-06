@@ -165,10 +165,12 @@ bar {
         opacity: 1; }
       bar .container .icon.active {
         opacity: 1; }
-      bar .container .icon img {
+      bar .container .icon .icon-sym {
+        color: white;
+        font-size: 50;
+        margin: 0;
         position: relative;
         display: inline-block;
-        width: auto;
         height: 80%;
         left: 50%;
         -webkit-transform: translate(-50%, 0);
@@ -178,7 +180,21 @@ bar {
         transform: translate(-50%, 0);
         /* IE 10, Fx 16+, Op 12.1+ */
         -o-transform: translate(-50%, 0);
-        -moz-transform: translate(-50%, 0); }
+        -moz-transform: translate(-50%, 0);
+        width: 100%; }
+      bar .container .icon [class^="icon-"]:before, bar .container .icon [class*=" icon-"]:before {
+        position: relative;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: translate(-50%, -50%);
+        /* IE 9 */
+        transform: translate(-50%, -50%);
+        /* IE 10, Fx 16+, Op 12.1+ */
+        -o-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%); }
       bar .container .icon p {
         color: white;
         position: relative;
@@ -577,7 +593,7 @@ bar {
         left: 0;
         margin: auto; }
   .adventures .events-router-container {
-    display: table-cell;
+    display: block;
     height: 100%; }
   .adventures events {
     display: table;

@@ -9,8 +9,10 @@ import {ROUTER_DIRECTIVES, Router} from 'angular2/router';
                              'active': router.isRouteActive(router.generate([item.name])) }"
             *ngFor="#item of items; #i = index"
             [routerLink]="[item.name]" (click)="click(item.name)">
-                <img src={{item.icon}}>
+                <img *ngIf="i==0" src={{item.icon}}>
+                <div *ngIf="i!=0" class="icon-sym {{item.iconCls}}"></div>
                 <p *ngIf="i != 0">{{item.display}}</p>
+
             </div>
         </div>
     `
@@ -25,25 +27,29 @@ export class Bar implements AfterViewInit {
                 name : "Home",
                 display : "Brian Lee",
                 path : "/home",
-                icon : "icons/brian-icon.png"
+                icon : "icons/brian-icon.png",
+                iconCls: ''
             },
             {
                 name : "Adventures",
                 display : "Adventures",
                 path : "/adventures",
-                icon : ""
+                icon : "icons/adventure-icon.png",
+                iconCls : 'icon-adventure'
             },
             {
                 name : "Blog",
                 display : "B Log",
                 path : "/blog",
-                icon : "icons/blog-icon.png"
+                icon : "icons/blog-icon.png",
+                iconCls : 'icon-blog'
             },
             {
                 name : "Projects",
                 display : "Projects",
                 path : "/projects",
-                icon : ""
+                icon : "icons/projects-icon.png",
+                iconCls : 'icon-github'
             },
 
         ];
