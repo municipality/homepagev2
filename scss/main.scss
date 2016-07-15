@@ -44,7 +44,6 @@ $barColor: #1c1c1f;
 }
 
 @mixin center($which) {
-    position: absolute;
 
     @if $which == 'vertical' {
         top: 50%;
@@ -145,6 +144,7 @@ bar {
             }
 
             [class^="icon-"]:before, [class*=" icon-"]:before {
+                position: absolute;
                 @include center('both');
             }
 
@@ -228,6 +228,8 @@ bar {
 }
 
 .designs {
+    padding-bottom: 5em;
+
     .intro {
         width: 100%;
         height: 20em;
@@ -236,14 +238,59 @@ bar {
 
     .container {
         padding: 3em 1em 0 1em;
-        @include box-shadow(0 -.2em .7em);
-    }
+        margin-bottom: 3em;
+        position: relative;
+        .title {
+            margin: 0 0 1em 0;
+        }
 
-    .title {
-        margin: 0 0 1em 0;
-    }
+        .description {
+            color: $blue;
+            padding-bottom: 2em;
+        }
 
-    .description {
+        .description::after {
+            content: '';
+            width: 50%;
+            height: 1px;
+            background: gray;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+
+    }
+    .projects-container {
+        display: table;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+        width: 70%;
+        .projects-row{
+            display: table-row;
+            .project {
+                display: table-cell;
+                padding: 0 .1em;
+
+                img {
+                    position: relative;
+                    @include center('horizontal');
+                    max-width: 15em;
+                    max-height: 15em;
+                    width: 100%;
+                }
+
+                p {
+                    color: $blue;
+                }
+            }
+        }
+
     }
 
 }
@@ -281,6 +328,7 @@ $listSize: 15em;
                 height: 2em;
                 background-color: $seasonsHeaderColor;
                 h4 {
+                    position: absolute;
                     @include center(vertical);
                 }
             }
@@ -319,14 +367,8 @@ $listSize: 15em;
                 margin: auto;
 
             }
-
-
-
-
         }
     }
-
-
 
     // Router container for styles and presentation
     .styles-router-container {
@@ -357,6 +399,7 @@ $listSize: 15em;
                 height: 2em;
                 background-color: $seasonsHeaderColor;
                 h4 {
+                    position: absolute;
                     @include center(vertical);
                 }
             }
@@ -367,7 +410,7 @@ $listSize: 15em;
                 position: relative;
                 h3 {
                     @include center(vertical);
-                    position: relative;
+                    position: absolute;
                 }
 
                 &:hover {
@@ -435,12 +478,7 @@ $listSize: 15em;
         }
     }
 
-    summer2016losangeles {
-        display: block;
-        height: 100%;
-        width: 100%;
-        overflow: scroll;
-    }
+
 
 
 }
@@ -530,6 +568,7 @@ $listSize: 15em;
                 height: 2em;
                 background-color: $seasonsHeaderColor;
                 h4 {
+                    position: absolute;
                     @include center(vertical);
                 }
             }
@@ -540,7 +579,7 @@ $listSize: 15em;
                 position: relative;
                 h3 {
                     @include center(vertical);
-                    position: relative;
+                    position: absolute;
                 }
 
                 &:hover {
@@ -603,6 +642,7 @@ $listSize: 15em;
                 height: 2em;
                 background-color: $seasonsHeaderColor;
                 h4 {
+                    position: absolute;
                     @include center(vertical);
                 }
             }
@@ -625,6 +665,7 @@ $listSize: 15em;
                 }
 
                 .event-name-container {
+                    position: absolute;
                     @include center(vertical);
                 }
 
@@ -687,6 +728,16 @@ $listSize: 15em;
         height: 100%;
         width: 100%;
         overflow: scroll;
+        position: relative;
+
+        .santa-monica {
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+        }
     }
 
 

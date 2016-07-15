@@ -251,7 +251,6 @@ bar {
     position: relative; }
     .home .titles-container .titles {
       position: absolute;
-      position: absolute;
       top: 50%;
       -webkit-transform: translate(0, -50%);
       /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
@@ -283,19 +282,59 @@ bar {
         -moz-transition: all 0.1s ease-in-out;
         transition: all 0.1s ease-in-out; }
 
-.designs .intro {
-  width: 100%;
-  height: 20em;
-  background: url("../images/design-intro.jpg") no-repeat scroll right 0; }
-
-.designs .container {
-  padding: 3em 1em 0 1em;
-  box-shadow: 0 -0.2em 0.7em;
-  -webkit-box-shadow: 0 -0.2em 0.7em;
-  -moz-box-shadow: 0 -0.2em 0.7em; }
-
-.designs .title {
-  margin: 0 0 1em 0; }
+.designs {
+  padding-bottom: 5em; }
+  .designs .intro {
+    width: 100%;
+    height: 20em;
+    background: url("../images/design-intro.jpg") no-repeat scroll right 0; }
+  .designs .container {
+    padding: 3em 1em 0 1em;
+    margin-bottom: 3em;
+    position: relative; }
+    .designs .container .title {
+      margin: 0 0 1em 0; }
+    .designs .container .description {
+      color: #3498db;
+      padding-bottom: 2em; }
+    .designs .container .description::after {
+      content: '';
+      width: 50%;
+      height: 1px;
+      background: gray;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto; }
+  .designs .projects-container {
+    display: table;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%; }
+    .designs .projects-container .projects-row {
+      display: table-row; }
+      .designs .projects-container .projects-row .project {
+        display: table-cell;
+        padding: 0 .1em; }
+        .designs .projects-container .projects-row .project img {
+          position: relative;
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: translate(-50%, 0);
+          /* IE 9 */
+          transform: translate(-50%, 0);
+          /* IE 10, Fx 16+, Op 12.1+ */
+          -o-transform: translate(-50%, 0);
+          -moz-transform: translate(-50%, 0);
+          max-width: 15em;
+          max-height: 15em;
+          width: 100%; }
+        .designs .projects-container .projects-row .project p {
+          color: #3498db; }
 
 .fashion {
   display: table;
@@ -339,7 +378,6 @@ bar {
         height: 3em;
         position: relative; }
         .fashion .seasons-container .seasons .season h3 {
-          position: absolute;
           top: 50%;
           -webkit-transform: translate(0, -50%);
           /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
@@ -414,7 +452,6 @@ bar {
         height: 3em;
         position: relative; }
         .fashion .styles-container .styles .style h3 {
-          position: absolute;
           top: 50%;
           -webkit-transform: translate(0, -50%);
           /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
@@ -424,7 +461,7 @@ bar {
           /* IE 10, Fx 16+, Op 12.1+ */
           -o-transform: translate(0, -50%);
           -moz-transform: translate(0, -50%);
-          position: relative; }
+          position: absolute; }
         .fashion .styles-container .styles .style:hover {
           cursor: pointer; }
         .fashion .styles-container .styles .style.active {
@@ -470,11 +507,6 @@ bar {
       right: 0;
       left: 0;
       margin: auto; }
-  .fashion summer2016losangeles {
-    display: block;
-    height: 100%;
-    width: 100%;
-    overflow: scroll; }
 
 .blog {
   position: relative;
@@ -557,7 +589,6 @@ bar {
         height: 3em;
         position: relative; }
         .adventures .seasons-container .seasons .season h3 {
-          position: absolute;
           top: 50%;
           -webkit-transform: translate(0, -50%);
           /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
@@ -567,7 +598,7 @@ bar {
           /* IE 10, Fx 16+, Op 12.1+ */
           -o-transform: translate(0, -50%);
           -moz-transform: translate(0, -50%);
-          position: relative; }
+          position: absolute; }
         .adventures .seasons-container .seasons .season:hover {
           cursor: pointer; }
         .adventures .seasons-container .seasons .season.active {
@@ -691,4 +722,8 @@ bar {
     display: block;
     height: 100%;
     width: 100%;
-    overflow: scroll; }
+    overflow: scroll;
+    position: relative; }
+    .adventures summer2016losangeles .santa-monica img {
+      width: 100%;
+      height: auto; }

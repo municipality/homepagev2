@@ -12,9 +12,11 @@ import {SeasonDefault} from './adventures.components';
     template: `
         <div class="presentation summer2016losangeles">
             <presentation-header></presentation-header>
-            <h1 class="header" align="center">Chillin</h1>
+            <!--<h1 class="header" align="center">Chillin</h1>-->
 
-            <img src="brian-blurred.jpg">
+            <div class="santa-monica">
+                <img class="santa-monica-img" src="images/santamonica.jpg">
+            </div>
         </div>
     `
 })
