@@ -16,7 +16,7 @@ export class BlogService {
         //         entry : ""
         //     }
         // ];
-        let url = `http://localhost:3000/api/blogentries`;
+        let url = `http://blee.herokuapp.com/api/blogentries`;
 
         return this.http.get(url)
                .map((response) => {
