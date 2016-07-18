@@ -136,8 +136,6 @@ bar {
       top: 0;
       left: 0;
       padding: 1em 0; }
-      bar .container .logo:hover {
-        cursor: pointer; }
       bar .container .logo img {
         width: 100%;
         height: auto;
@@ -150,9 +148,6 @@ bar {
       margin: 1em auto;
       opacity: .5;
       padding-bottom: 1em; }
-      bar .container .icon:hover {
-        cursor: pointer;
-        opacity: 1; }
       bar .container .icon.active {
         opacity: 1; }
       bar .container .icon .icon-sym {
