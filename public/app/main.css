@@ -147,8 +147,9 @@ bar {
       width: 100%;
       top: 0;
       left: 0; }
-      bar .container .logo:hover {
-        cursor: pointer; }
+      @media only screen and (min-device-width: 1201px) {
+        bar .container .logo:hover {
+          cursor: pointer; } }
       bar .container .logo img {
         width: 100%;
         height: auto;
@@ -160,9 +161,10 @@ bar {
       height: 5.6em;
       margin: 1em auto;
       opacity: .5; }
-      bar .container .icon:hover {
-        cursor: pointer;
-        opacity: 1; }
+      @media only screen and (min-device-width: 1201px) {
+        bar .container .icon:hover {
+          cursor: pointer;
+          opacity: 1; } }
       bar .container .icon.active {
         opacity: 1; }
       bar .container .icon .icon-sym {
