@@ -16,8 +16,8 @@ var compress = require('compression');
 
 app.use(compress());
 // expose node_modules to client app
-app.use(express.static("./node_modules/", { maxage: '7d', } ));
-app.use(express.static("./app/"));
+app.use(express.static(__dirname + "/node_modules/", { maxage: '7d', } ));
+//app.use(express.static(__dirname + "/app/"));
 app.use(express.static(__dirname + '/public/', { maxage: '7d' }));
 
 
@@ -58,7 +58,7 @@ router.get('/blogentries', function(req, res) {
             var second = new Date(b.date);
             return second.getTime() - first.getTime();
         });
-        
+
         res.json(response);
     });
 

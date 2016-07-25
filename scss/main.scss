@@ -60,7 +60,15 @@ $barColor: #1c1c1f;
     }
 }
 
+.white {
+    background-color: rgba(255, 255, 255, .7);
+    color:  rgba(52, 152, 219, 1);
+}
 
+.blue {
+    background-color: rgba(52, 152, 219, .7);
+    color: white;
+}
 
 body {
     margin: 0;
@@ -177,60 +185,7 @@ bar {
     height: 100%;
 }
 
-.home {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url('../images/brian-blurred.jpg') no-repeat fixed center;
-    background-size: cover;
-    @include flexbox();
-    flex-direction: row;
 
-    .icon-container {
-        position: relative;
-        @include flex(1);
-        height: 100%;
-
-        .icon {
-            width: 100%;
-            height: auto;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            max-width: 20em;
-            margin: auto;
-        }
-    }
-
-    .titles-container {
-        @include flex(1);
-        height: 100%;
-        position: relative;
-
-
-        .titles {
-            position: absolute;
-            @include center('vertical');
-
-            .blue {
-                background-color: rgba(52, 152, 219, .7);
-                color: white;
-            }
-
-            .white {
-                background-color: rgba(255, 255, 255, .7);
-                color:  $blue;
-            }
-
-            h1:hover {
-                @include transform(scale(1.2));
-                @include transition(all, .1s);
-            }
-        }
-    }
-}
 
 .designs {
     padding-bottom: 5em;
@@ -746,4 +701,218 @@ $listSize: 15em;
     }
 
 
+}
+
+$objH1: 48px;
+$objP: 20px;
+
+.home {
+
+    h1 {
+        font-size: $objH1;
+    }
+
+    p {
+        font-size: $objP;
+    }
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../images/brian-blurred.jpg') no-repeat fixed center;
+    background-size: cover;
+    @include flexbox();
+    flex-direction: row;
+
+    .icon-container {
+        position: relative;
+        @include flex(1);
+        height: 100%;
+
+        .icon {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            max-width: 20em;
+            margin: auto;
+        }
+    }
+
+    .titles-container {
+        @include flex(1);
+        height: 100%;
+        position: relative;
+
+
+        .titles {
+            position: absolute;
+            @include center('vertical');
+
+            .blue {
+                background-color: rgba(52, 152, 219, .7);
+                color: white;
+            }
+
+            .white {
+                background-color: rgba(255, 255, 255, .7);
+                color:  $blue;
+            }
+
+            h1:hover {
+                @include transform(scale(1.2));
+                @include transition(all, .1s);
+            }
+        }
+    }
+}
+objectives {
+    h1 {
+        font-size: $objH1;
+    }
+
+    p {
+        font-size: $objP;
+    }
+
+    .outro-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background: black url("../images/outro1.jpg") center center no-repeat;
+        background-size: auto 100%;
+
+        .title {
+            position: relative;
+            z-index: 3;
+            width: 20em;
+            margin: 5em auto;
+        }
+    }
+
+    .desktop {
+        background-attachment: fixed;
+        -webkit-transition: background-image .5s ease-in-out; /* For Safari 3.1 to 6.0 */
+        -ms-transition: background-image .5s ease-in-out;
+        -o-transition: background-image .5s ease-in-out;
+        -moz-transition: background-image .5s ease-in-out;
+        transition: background-image .5s ease-in-out;
+        -webkit-background-size: 100% 100%;
+              -moz-background-size: 100% 100%;
+              -o-background-size: 100% 100%;
+              background-size: 100% 100%;
+
+    }
+
+    .outro-panel {
+        width: 100%;
+        /*height: 550px;*/
+        min-height: 700px;
+        /*background-color: red;*/
+        position: relative;
+    }
+
+
+
+
+    .outro-inner-panel {
+
+       & > div {
+           position: absolute;
+           top: 0;
+           bottom: 0;
+           z-index: 3;
+           width: 15em;
+           margin: auto;
+           height: 15em;
+
+           h1 {
+               font-weight: 100;
+               color: black;
+               background-color: rgba(255, 255, 255, .7);
+               padding: 0 .1em;
+           }
+
+           p {
+               /*background-color: rgba(255, 255, 255, .7);*/
+               background-color: rgba(52, 152, 219, .7);
+               color: white;
+               padding: 0 .1em;
+           }
+       }
+
+
+
+        &.left {
+            & > div {
+                left: 33%;
+            }
+
+            h1, h2, h3, h4, h5, h6, p {
+                text-align: left;
+            }
+        }
+
+        &.right {
+            & > div {
+                right: 33%;
+            }
+
+            h1, h2, h3, h4, h5, h6, p {
+                text-align: right;
+            }
+        }
+
+        &.center {
+            & > div {
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            h1, h2, h3, h4, h5, h6, p {
+                text-align: center;
+            }
+        }
+
+    }
+
+}
+
+
+
+
+.outro-image {
+    position: absolute;
+    -webkit-transition: opacity .5s linear; /* For Safari 3.1 to 6.0 */
+    transition: opacity .5s linear;
+    width: 2500px;
+}
+
+.outro-image.moon {
+    left: 50%;
+    -webkit-transform: translate(-50%, 0); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: translate(-50%, 0); /* IE 9 */
+        transform: translate(-50%, 0); /* IE 10, Fx 16+, Op 12.1+ */
+    z-index: 1;
+    width: 30%;
+    height: auto;
+    bottom: 0;
+}
+
+
+
+objectives .outro-intro {
+    float: left;
+    width: 200px;
+    height: 100%;
+    /*background-color: blue;*/
+
+}
+
+objectives .outro-inner-panel {
+    /*background-color: rgba(255, 255, 255, .7);*/
 }

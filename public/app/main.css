@@ -115,6 +115,14 @@
     -webkit-filter: 0;
     filter: 0; } }
 
+.white {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #3498db; }
+
+.blue {
+  background-color: rgba(52, 152, 219, 0.7);
+  color: white; }
+
 body {
   margin: 0;
   font-family: Roboto, sans-serif; }
@@ -210,79 +218,6 @@ bar {
   right: 0;
   left: 9em;
   height: 100%; }
-
-.home {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url("../images/brian-blurred.jpg") no-repeat fixed center;
-  background-size: cover;
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  flex-direction: row; }
-  .home .icon-container {
-    position: relative;
-    flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    -moz-flex: 1;
-    height: 100%; }
-    .home .icon-container .icon {
-      width: 100%;
-      height: auto;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      max-width: 20em;
-      margin: auto; }
-  .home .titles-container {
-    flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    -moz-flex: 1;
-    height: 100%;
-    position: relative; }
-    .home .titles-container .titles {
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-      -ms-transform: translate(0, -50%);
-      /* IE 9 */
-      transform: translate(0, -50%);
-      /* IE 10, Fx 16+, Op 12.1+ */
-      -o-transform: translate(0, -50%);
-      -moz-transform: translate(0, -50%); }
-      .home .titles-container .titles .blue {
-        background-color: rgba(52, 152, 219, 0.7);
-        color: white; }
-      .home .titles-container .titles .white {
-        background-color: rgba(255, 255, 255, 0.7);
-        color: #3498db; }
-      .home .titles-container .titles h1:hover {
-        -webkit-transform: scale(1.2);
-        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-        -ms-transform: scale(1.2);
-        /* IE 9 */
-        transform: scale(1.2);
-        /* IE 10, Fx 16+, Op 12.1+ */
-        -o-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -webkit-transition: all 0.1s ease-in-out;
-        /* For Safari 3.1 to 6.0 */
-        -ms-transition: all 0.1s ease-in-out;
-        -o-transition: all 0.1s ease-in-out;
-        -moz-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out; }
 
 .designs {
   padding-bottom: 5em; }
@@ -729,3 +664,186 @@ bar {
     .adventures summer2016losangeles .santa-monica img {
       width: 100%;
       height: auto; }
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../images/brian-blurred.jpg") no-repeat fixed center;
+  background-size: cover;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  flex-direction: row; }
+  .home h1 {
+    font-size: 48px; }
+  .home p {
+    font-size: 20px; }
+  .home .icon-container {
+    position: relative;
+    flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -moz-flex: 1;
+    height: 100%; }
+    .home .icon-container .icon {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 20em;
+      margin: auto; }
+  .home .titles-container {
+    flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    -moz-flex: 1;
+    height: 100%;
+    position: relative; }
+    .home .titles-container .titles {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translate(0, -50%);
+      /* IE 9 */
+      transform: translate(0, -50%);
+      /* IE 10, Fx 16+, Op 12.1+ */
+      -o-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%); }
+      .home .titles-container .titles .blue {
+        background-color: rgba(52, 152, 219, 0.7);
+        color: white; }
+      .home .titles-container .titles .white {
+        background-color: rgba(255, 255, 255, 0.7);
+        color: #3498db; }
+      .home .titles-container .titles h1:hover {
+        -webkit-transform: scale(1.2);
+        /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+        -ms-transform: scale(1.2);
+        /* IE 9 */
+        transform: scale(1.2);
+        /* IE 10, Fx 16+, Op 12.1+ */
+        -o-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transition: all 0.1s ease-in-out;
+        /* For Safari 3.1 to 6.0 */
+        -ms-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
+
+objectives h1 {
+  font-size: 48px; }
+
+objectives p {
+  font-size: 20px; }
+
+objectives .outro-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: black url("../images/outro1.jpg") center center no-repeat;
+  background-size: auto 100%; }
+  objectives .outro-container .title {
+    position: relative;
+    z-index: 3;
+    width: 20em;
+    margin: 5em auto; }
+
+objectives .desktop {
+  background-attachment: fixed;
+  -webkit-transition: background-image .5s ease-in-out;
+  /* For Safari 3.1 to 6.0 */
+  -ms-transition: background-image .5s ease-in-out;
+  -o-transition: background-image .5s ease-in-out;
+  -moz-transition: background-image .5s ease-in-out;
+  transition: background-image .5s ease-in-out;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%; }
+
+objectives .outro-panel {
+  width: 100%;
+  /*height: 550px;*/
+  min-height: 700px;
+  /*background-color: red;*/
+  position: relative; }
+
+objectives .outro-inner-panel > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 15em;
+  margin: auto;
+  height: 15em; }
+  objectives .outro-inner-panel > div h1 {
+    font-weight: 100;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 0 .1em; }
+  objectives .outro-inner-panel > div p {
+    /*background-color: rgba(255, 255, 255, .7);*/
+    background-color: rgba(52, 152, 219, 0.7);
+    color: white;
+    padding: 0 .1em; }
+
+objectives .outro-inner-panel.left > div {
+  left: 33%; }
+
+objectives .outro-inner-panel.left h1, objectives .outro-inner-panel.left h2, objectives .outro-inner-panel.left h3, objectives .outro-inner-panel.left h4, objectives .outro-inner-panel.left h5, objectives .outro-inner-panel.left h6, objectives .outro-inner-panel.left p {
+  text-align: left; }
+
+objectives .outro-inner-panel.right > div {
+  right: 33%; }
+
+objectives .outro-inner-panel.right h1, objectives .outro-inner-panel.right h2, objectives .outro-inner-panel.right h3, objectives .outro-inner-panel.right h4, objectives .outro-inner-panel.right h5, objectives .outro-inner-panel.right h6, objectives .outro-inner-panel.right p {
+  text-align: right; }
+
+objectives .outro-inner-panel.center > div {
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+objectives .outro-inner-panel.center h1, objectives .outro-inner-panel.center h2, objectives .outro-inner-panel.center h3, objectives .outro-inner-panel.center h4, objectives .outro-inner-panel.center h5, objectives .outro-inner-panel.center h6, objectives .outro-inner-panel.center p {
+  text-align: center; }
+
+.outro-image {
+  position: absolute;
+  -webkit-transition: opacity .5s linear;
+  /* For Safari 3.1 to 6.0 */
+  transition: opacity .5s linear;
+  width: 2500px; }
+
+.outro-image.moon {
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+  -ms-transform: translate(-50%, 0);
+  /* IE 9 */
+  transform: translate(-50%, 0);
+  /* IE 10, Fx 16+, Op 12.1+ */
+  z-index: 1;
+  width: 30%;
+  height: auto;
+  bottom: 0; }
+
+objectives .outro-intro {
+  float: left;
+  width: 200px;
+  height: 100%;
+  /*background-color: blue;*/ }
+
+objectives .outro-inner-panel {
+  /*background-color: rgba(255, 255, 255, .7);*/ }

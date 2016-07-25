@@ -1,9 +1,11 @@
 import {Component, AfterViewInit, ViewChild} from 'angular2/core';
-
+import {Objectives} from './objectives.component';
 
 @Component ({
+    selector: 'home',
+    directives: [Objectives],
     template : `
-        <div class="home fadeIn">
+        <div #image class="home fadeIn">
             <div class="icon-container">
                 <img class="icon" src="images/brian-icon-2.png">
             </div>
@@ -15,6 +17,7 @@ import {Component, AfterViewInit, ViewChild} from 'angular2/core';
                 </div>
             </div>
         </div>
+        <objectives></objectives>
     `
 })
 
@@ -26,11 +29,10 @@ export class Home implements AfterViewInit {
     }
 
     ngAfterViewInit () {
-        document.addEventListener('scroll', (e) => {
-            setTimeout(() => {
+        var me = this;
+        document.addEventListener('scroll', function(e){
                 let scrollTop = window.pageYOffset;
-                this.image.nativeElement.style["background-position"] = "0 " + (-scrollTop * .1) + "px";
-            }, 1000/60);
-        })
+                me.image.nativeElement.style["background-position"] = "0 " + (-scrollTop * .1) + "px";
+        });
     }
 }
