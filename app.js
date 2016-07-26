@@ -16,7 +16,7 @@ var compress = require('compression');
 
 app.use(compress());
 // expose node_modules to client app
-app.use(express.static(__dirname + "/node_modules/", { maxage: '7d', } ));
+app.use(express.static("./node_modules/", { maxage: '7d', } ));
 //app.use(express.static(__dirname + "/app/"));
 app.use(express.static(__dirname + '/public/', { maxage: '7d' }));
 
