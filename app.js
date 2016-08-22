@@ -4,8 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var request = require('request');
+var $ = require('jquery');
 var fs = require('fs');
+
+//mongodb dependencies
+var mongo = require('mongodb');
+var monk = require('monk');
+var db = monk('mongodb://admin:maples@ds147995.mlab.com:47995/homepage');
 
 var users = require('./routes/users');
 
@@ -29,6 +35,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+// // Make our db accessible to our router
+// app.use(function(req,res,next){
+//     req.db = db;
+//     next();
+// });
 
 var router = express.Router();
 
@@ -64,12 +76,25 @@ router.get('/blogentries', function(req, res) {
 
 });
 
+router.get('/misfitsub', function(req, res) {
+    res.json(req);
+});
+
+router.get('/test1', function(req, res) {
+    var collection = db.get('usercollection');
+    collection.find({},{},function(e,docs){
+        res.json(docs);
+    });
+});
+
 app.use('/api', router);
 
 app.all('*', function(req, res) {
   console.log("[TRACE] Server 404 request:" + req.originalUrl);
   res.status(200).sendFile(path.join(__dirname, 'public/index.html'));
 });
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,0 +1,994 @@
+[
+     {
+      "date": "2016-07-01",
+      "points": 733.2,
+      "steps": 7198,
+      "calories": 2449.7962,
+      "activityCalories": 264.4,
+      "distance": 2.6484
+    },
+     {
+      "date": "2016-07-02",
+      "points": 1809.6,
+      "steps": 17954,
+      "calories": 2918.7962,
+      "activityCalories": 652.6,
+      "distance": 6.5463
+    },
+     {
+      "date": "2016-07-03",
+      "points": 1315.2,
+      "steps": 12696,
+      "calories": 2703.3962,
+      "activityCalories": 474.3,
+      "distance": 4.7209
+    },
+     {
+      "date": "2016-07-04",
+      "points": 780.8,
+      "steps": 7694,
+      "calories": 2470.4962,
+      "activityCalories": 281.6,
+      "distance": 2.784
+    },
+     {
+      "date": "2016-07-05",
+      "points": 1337.2,
+      "steps": 13274,
+      "calories": 2712.9962,
+      "activityCalories": 482.2,
+      "distance": 4.7749
+    },
+     {
+      "date": "2016-07-06",
+      "points": 775.6,
+      "steps": 7510,
+      "calories": 2468.2962,
+      "activityCalories": 279.7,
+      "distance": 2.7029
+    },
+     {
+      "date": "2016-07-07",
+      "points": 864.4,
+      "steps": 8390,
+      "calories": 2506.8962,
+      "activityCalories": 311.7,
+      "distance": 3.0844
+    },
+     {
+      "date": "2016-07-08",
+      "points": 1158.4,
+      "steps": 11502,
+      "calories": 2635.0962,
+      "activityCalories": 417.7,
+      "distance": 4.1303
+    },
+     {
+      "date": "2016-07-09",
+      "points": 1490,
+      "steps": 14604,
+      "calories": 2779.4962,
+      "activityCalories": 537.3,
+      "distance": 5.3651
+    },
+     {
+      "date": "2016-07-10",
+      "points": 800.4,
+      "steps": 7940,
+      "calories": 2479.0962,
+      "activityCalories": 288.6,
+      "distance": 2.8395
+    },
+     {
+      "date": "2016-07-11",
+      "points": 1570.4,
+      "steps": 15368,
+      "calories": 2814.5962,
+      "activityCalories": 566.3,
+      "distance": 5.7468
+    },
+     {
+      "date": "2016-07-12",
+      "points": 1729.6,
+      "steps": 16972,
+      "calories": 2883.8962,
+      "activityCalories": 623.7,
+      "distance": 6.1962
+    },
+     {
+      "date": "2016-07-13",
+      "points": 816.8,
+      "steps": 7872,
+      "calories": 2486.1962,
+      "activityCalories": 294.5,
+      "distance": 2.8898
+    },
+     {
+      "date": "2016-07-14",
+      "points": 1810,
+      "steps": 17828,
+      "calories": 2918.9962,
+      "activityCalories": 652.7,
+      "distance": 6.5044
+    },
+     {
+      "date": "2016-07-15",
+      "points": 1155.6,
+      "steps": 11494,
+      "calories": 2633.7962,
+      "activityCalories": 416.7,
+      "distance": 4.129
+    },
+     {
+      "date": "2016-07-16",
+      "points": 1416,
+      "steps": 14056,
+      "calories": 2747.2962,
+      "activityCalories": 510.6,
+      "distance": 5.0806
+    },
+     {
+      "date": "2016-07-17",
+      "points": 2006.8,
+      "steps": 19364,
+      "calories": 3004.6962,
+      "activityCalories": 723.7,
+      "distance": 7.079
+    },
+     {
+      "date": "2016-07-18",
+      "points": 324,
+      "steps": 3190,
+      "calories": 2271.4962,
+      "activityCalories": 116.8,
+      "distance": 1.1542
+    },
+     {
+      "date": "2016-07-19",
+      "points": 1608.4,
+      "steps": 15856,
+      "calories": 2831.0962,
+      "activityCalories": 580,
+      "distance": 5.7544
+    },
+     {
+      "date": "2016-07-20",
+      "points": 485.6,
+      "steps": 4790,
+      "calories": 2341.8962,
+      "activityCalories": 175.1,
+      "distance": 1.7416
+    },
+     {
+      "date": "2016-07-21",
+      "points": 972.8,
+      "steps": 9376,
+      "calories": 2554.1962,
+      "activityCalories": 350.8,
+      "distance": 3.4113
+    },
+     {
+      "date": "2016-07-22",
+      "points": 687.6,
+      "steps": 6268,
+      "calories": 2429.8962,
+      "activityCalories": 248,
+      "distance": 2.3348
+    },
+     {
+      "date": "2016-07-23",
+      "points": 216.4,
+      "steps": 2138,
+      "calories": 2224.5962,
+      "activityCalories": 78,
+      "distance": 0.7658
+    },
+     {
+      "date": "2016-07-24",
+      "points": 1384,
+      "steps": 13294,
+      "calories": 2733.3962,
+      "activityCalories": 499.1,
+      "distance": 4.9249
+    },
+     {
+      "date": "2016-07-25",
+      "points": 782,
+      "steps": 7732,
+      "calories": 2470.9962,
+      "activityCalories": 282,
+      "distance": 2.7908
+    },
+     {
+      "date": "2016-07-26",
+      "points": 1285.6,
+      "steps": 12766,
+      "calories": 2690.4962,
+      "activityCalories": 463.6,
+      "distance": 4.6049
+    },
+     {
+      "date": "2016-07-27",
+      "points": 666.4,
+      "steps": 6608,
+      "calories": 2420.6962,
+      "activityCalories": 240.3,
+      "distance": 2.3674
+    },
+     {
+      "date": "2016-07-28",
+      "points": 799.2,
+      "steps": 7768,
+      "calories": 2478.4962,
+      "activityCalories": 288.2,
+      "distance": 2.7899
+    },
+     {
+      "date": "2016-07-29",
+      "points": 848.8,
+      "steps": 8400,
+      "calories": 2500.0962,
+      "activityCalories": 306.1,
+      "distance": 3.0353
+    },
+     {
+      "date": "2016-07-30",
+      "points": 2153.2,
+      "steps": 20458,
+      "calories": 3068.4962,
+      "activityCalories": 776.5,
+      "distance": 7.5527
+    },
+     {
+      "date": "2016-07-31",
+      "points": 1937.2,
+      "steps": 19106,
+      "calories": 2974.3962,
+      "activityCalories": 698.6,
+      "distance": 6.9848
+    },
+    {
+      "date": "2016-08-01",
+      "points": 1140.8,
+      "steps": 11304,
+      "calories": 2627.3962,
+      "activityCalories": 411.4,
+      "distance": 4.1516
+    },
+     {
+      "date": "2016-08-02",
+      "points": 1584.4,
+      "steps": 15550,
+      "calories": 2820.6962,
+      "activityCalories": 571.3,
+      "distance": 5.6673
+    },
+     {
+      "date": "2016-08-03",
+      "points": 855.2,
+      "steps": 8332,
+      "calories": 2502.8962,
+      "activityCalories": 308.4,
+      "distance": 3.0411
+    },
+     {
+      "date": "2016-08-04",
+      "points": 841.6,
+      "steps": 8182,
+      "calories": 2496.9962,
+      "activityCalories": 303.5,
+      "distance": 3.0404
+    },
+     {
+      "date": "2016-08-05",
+      "points": 1050.8,
+      "steps": 10160,
+      "calories": 2588.1962,
+      "activityCalories": 378.9,
+      "distance": 3.7747
+    },
+     {
+      "date": "2016-08-06",
+      "points": 1679.6,
+      "steps": 15978,
+      "calories": 2862.1962,
+      "activityCalories": 605.7,
+      "distance": 5.9819
+    },
+     {
+      "date": "2016-08-07",
+      "points": 1430.4,
+      "steps": 14172,
+      "calories": 2753.5962,
+      "activityCalories": 515.8,
+      "distance": 5.109
+    },
+     {
+      "date": "2016-08-08",
+      "points": 824.8,
+      "steps": 8184,
+      "calories": 2489.6962,
+      "activityCalories": 297.4,
+      "distance": 2.9439
+    },
+     {
+      "date": "2016-08-09",
+      "points": 1476.8,
+      "steps": 14076,
+      "calories": 2773.7962,
+      "activityCalories": 532.5,
+      "distance": 5.1544
+    },
+     {
+      "date": "2016-08-10",
+      "points": 878,
+      "steps": 8394,
+      "calories": 2512.8962,
+      "activityCalories": 316.6,
+      "distance": 3.1257
+    },
+     {
+      "date": "2016-08-11",
+      "points": 1449.6,
+      "steps": 14194,
+      "calories": 2761.8962,
+      "activityCalories": 522.7,
+      "distance": 5.2991
+    },
+     {
+      "date": "2016-08-12",
+      "points": 1374.8,
+      "steps": 13516,
+      "calories": 2729.2962,
+      "activityCalories": 495.8,
+      "distance": 5.0116
+    },
+     {
+      "date": "2016-08-13",
+      "points": 665.6,
+      "steps": 6602,
+      "calories": 2420.2962,
+      "activityCalories": 240,
+      "distance": 2.3781
+    },
+     {
+      "date": "2016-08-14",
+      "points": 1211.6,
+      "steps": 11508,
+      "calories": 2658.1962,
+      "activityCalories": 436.9,
+      "distance": 4.2333
+    },
+     {
+      "date": "2016-08-15",
+      "points": 608,
+      "steps": 6028,
+      "calories": 2395.1962,
+      "activityCalories": 219.2,
+      "distance": 2.1512
+    },
+     {
+      "date": "2016-08-16",
+      "points": 765.2,
+      "steps": 7560,
+      "calories": 2463.6962,
+      "activityCalories": 275.9,
+      "distance": 2.7203
+    },
+     {
+      "date": "2016-08-17",
+      "points": 1185.2,
+      "steps": 11560,
+      "calories": 2646.6962,
+      "activityCalories": 427.4,
+      "distance": 4.1959
+    },
+     {
+      "date": "2016-08-18",
+      "points": 165.2,
+      "steps": 1548,
+      "calories": 2202.2962,
+      "activityCalories": 59.6,
+      "distance": 0.5694
+  },
+  {
+      "date": "2016-06-01",
+      "points": 400,
+      "steps": 3966,
+      "calories": 2304.5962,
+      "activityCalories": 144.2,
+      "distance": 1.4285
+    },
+     {
+      "date": "2016-06-02",
+      "points": 934.8,
+      "steps": 8668,
+      "calories": 2537.5962,
+      "activityCalories": 337.1,
+      "distance": 3.2483
+    },
+     {
+      "date": "2016-06-03",
+      "points": 832.4,
+      "steps": 8246,
+      "calories": 2492.9962,
+      "activityCalories": 300.2,
+      "distance": 2.9412
+    },
+     {
+      "date": "2016-06-04",
+      "points": 580.4,
+      "steps": 5620,
+      "calories": 2383.1962,
+      "activityCalories": 209.3,
+      "distance": 2.0141
+    },
+     {
+      "date": "2016-06-05",
+      "points": 822.4,
+      "steps": 8096,
+      "calories": 2488.5962,
+      "activityCalories": 296.6,
+      "distance": 2.9228
+    },
+     {
+      "date": "2016-06-06",
+      "points": 764.4,
+      "steps": 7406,
+      "calories": 2463.3962,
+      "activityCalories": 275.6,
+      "distance": 2.7211
+    },
+     {
+      "date": "2016-06-07",
+      "points": 763.2,
+      "steps": 7552,
+      "calories": 2462.8962,
+      "activityCalories": 275.2,
+      "distance": 2.7041
+    },
+     {
+      "date": "2016-06-08",
+      "points": 740.4,
+      "steps": 7352,
+      "calories": 2452.8962,
+      "activityCalories": 267,
+      "distance": 2.6308
+    },
+     {
+      "date": "2016-06-09",
+      "points": 646.8,
+      "steps": 6410,
+      "calories": 2412.0962,
+      "activityCalories": 233.2,
+      "distance": 2.2883
+    },
+     {
+      "date": "2016-06-10",
+      "points": 1078.4,
+      "steps": 10688,
+      "calories": 2600.1962,
+      "activityCalories": 388.9,
+      "distance": 3.8593
+    },
+     {
+      "date": "2016-06-11",
+      "points": 1107.2,
+      "steps": 10964,
+      "calories": 2612.6962,
+      "activityCalories": 399.3,
+      "distance": 3.952
+    },
+     {
+      "date": "2016-06-12",
+      "points": 1427.6,
+      "steps": 14176,
+      "calories": 2752.3962,
+      "activityCalories": 514.8,
+      "distance": 5.2043
+    },
+     {
+      "date": "2016-06-13",
+      "points": 402.4,
+      "steps": 3992,
+      "calories": 2305.5962,
+      "activityCalories": 145.1,
+      "distance": 1.4339
+    },
+     {
+      "date": "2016-06-14",
+      "points": 310,
+      "steps": 3058,
+      "calories": 2265.3962,
+      "activityCalories": 111.8,
+      "distance": 1.083
+    },
+     {
+      "date": "2016-06-15",
+      "points": 793.6,
+      "steps": 7814,
+      "calories": 2476.0962,
+      "activityCalories": 286.2,
+      "distance": 2.8243
+    },
+     {
+      "date": "2016-06-16",
+      "points": 817.2,
+      "steps": 8010,
+      "calories": 2486.3962,
+      "activityCalories": 294.7,
+      "distance": 2.9579
+    },
+     {
+      "date": "2016-06-17",
+      "points": 545.6,
+      "steps": 5220,
+      "calories": 2367.9962,
+      "activityCalories": 196.7,
+      "distance": 1.9044
+    },
+     {
+      "date": "2016-06-18",
+      "points": 2468.8,
+      "steps": 23736,
+      "calories": 3166.906,
+      "activityCalories": 890.3,
+      "distance": 8.9706
+    },
+     {
+      "date": "2016-06-19",
+      "points": 461.6,
+      "steps": 4566,
+      "calories": 2331.3962,
+      "activityCalories": 166.5,
+      "distance": 1.6171
+    },
+     {
+      "date": "2016-06-20",
+      "points": 610.8,
+      "steps": 6038,
+      "calories": 2396.3962,
+      "activityCalories": 220.3,
+      "distance": 2.1837
+    },
+     {
+      "date": "2016-06-21",
+      "points": 1373.6,
+      "steps": 13648,
+      "calories": 2728.7962,
+      "activityCalories": 495.3,
+      "distance": 4.9368
+    },
+     {
+      "date": "2016-06-22",
+      "points": 477.6,
+      "steps": 4388,
+      "calories": 2338.3962,
+      "activityCalories": 172.2,
+      "distance": 1.625
+    },
+     {
+      "date": "2016-06-23",
+      "points": 706.8,
+      "steps": 7006,
+      "calories": 2438.2962,
+      "activityCalories": 254.9,
+      "distance": 2.5091
+    },
+     {
+      "date": "2016-06-24",
+      "points": 945.2,
+      "steps": 9202,
+      "calories": 2542.1962,
+      "activityCalories": 340.8,
+      "distance": 3.3732
+    },
+     {
+      "date": "2016-06-25",
+      "points": 1137.2,
+      "steps": 11282,
+      "calories": 2625.7962,
+      "activityCalories": 410.1,
+      "distance": 4.0522
+    },
+     {
+      "date": "2016-06-26",
+      "points": 881.6,
+      "steps": 8714,
+      "calories": 2514.3962,
+      "activityCalories": 317.9,
+      "distance": 3.1654
+    },
+     {
+      "date": "2016-06-27",
+      "points": 611.6,
+      "steps": 6046,
+      "calories": 2396.7962,
+      "activityCalories": 220.5,
+      "distance": 2.162
+    },
+     {
+      "date": "2016-06-28",
+      "points": 776.4,
+      "steps": 7708,
+      "calories": 2468.5962,
+      "activityCalories": 280,
+      "distance": 2.7512
+    },
+     {
+      "date": "2016-06-29",
+      "points": 589.6,
+      "steps": 5832,
+      "calories": 2387.1962,
+      "activityCalories": 212.6,
+      "distance": 2.0972
+    },
+     {
+      "date": "2016-06-30",
+      "points": 937.6,
+      "steps": 9292,
+      "calories": 2538.7962,
+      "activityCalories": 338.1,
+      "distance": 3.3588
+    },
+  {
+      "date": "2016-05-01",
+      "points": 726.4,
+      "steps": 7200,
+      "calories": 2446.7962,
+      "activityCalories": 261.9,
+      "distance": 2.5568
+    },
+     {
+      "date": "2016-05-02",
+      "points": 720.8,
+      "steps": 7058,
+      "calories": 2444.3962,
+      "activityCalories": 259.9,
+      "distance": 2.546
+    },
+     {
+      "date": "2016-05-03",
+      "points": 896.4,
+      "steps": 8906,
+      "calories": 2520.8962,
+      "activityCalories": 323.2,
+      "distance": 3.1731
+    },
+     {
+      "date": "2016-05-04",
+      "points": 636,
+      "steps": 6172,
+      "calories": 2407.3962,
+      "activityCalories": 229.3,
+      "distance": 2.2523
+    },
+     {
+      "date": "2016-05-05",
+      "points": 1131.6,
+      "steps": 10736,
+      "calories": 2623.3962,
+      "activityCalories": 408.1,
+      "distance": 3.9851
+    },
+     {
+      "date": "2016-05-06",
+      "points": 993.2,
+      "steps": 9776,
+      "calories": 2563.0962,
+      "activityCalories": 358.2,
+      "distance": 3.5578
+    },
+     {
+      "date": "2016-05-07",
+      "points": 832.8,
+      "steps": 8258,
+      "calories": 2493.1962,
+      "activityCalories": 300.3,
+      "distance": 2.9708
+    },
+     {
+      "date": "2016-05-08",
+      "points": 1054,
+      "steps": 10480,
+      "calories": 2589.5962,
+      "activityCalories": 380.1,
+      "distance": 3.7755
+    },
+     {
+      "date": "2016-05-09",
+      "points": 780.8,
+      "steps": 7278,
+      "calories": 2470.4962,
+      "activityCalories": 281.6,
+      "distance": 2.7781
+    },
+     {
+      "date": "2016-05-10",
+      "points": 1346.8,
+      "steps": 13080,
+      "calories": 2717.0962,
+      "activityCalories": 485.7,
+      "distance": 4.8418
+    },
+     {
+      "date": "2016-05-11",
+      "points": 934,
+      "steps": 9186,
+      "calories": 2537.2962,
+      "activityCalories": 336.8,
+      "distance": 3.3045
+    },
+     {
+      "date": "2016-05-12",
+      "points": 136.8,
+      "steps": 1350,
+      "calories": 2189.8962,
+      "activityCalories": 49.3,
+      "distance": 0.4781
+    },
+     {
+      "date": "2016-05-13",
+      "points": 1474.8,
+      "steps": 14072,
+      "calories": 2772.8962,
+      "activityCalories": 531.8,
+      "distance": 5.1655
+    },
+     {
+      "date": "2016-05-14",
+      "points": 1340.4,
+      "steps": 12910,
+      "calories": 2714.3962,
+      "activityCalories": 483.4,
+      "distance": 4.8072
+    },
+     {
+      "date": "2016-05-15",
+      "points": 568.4,
+      "steps": 5648,
+      "calories": 2377.9962,
+      "activityCalories": 205,
+      "distance": 2.0572
+    },
+     {
+      "date": "2016-05-16",
+      "points": 772,
+      "steps": 7634,
+      "calories": 2466.6962,
+      "activityCalories": 278.4,
+      "distance": 2.7415
+    },
+     {
+      "date": "2016-05-17",
+      "points": 716,
+      "steps": 7062,
+      "calories": 2442.2962,
+      "activityCalories": 258.2,
+      "distance": 2.5782
+    },
+     {
+      "date": "2016-05-18",
+      "points": 750.4,
+      "steps": 7448,
+      "calories": 2457.2962,
+      "activityCalories": 270.6,
+      "distance": 2.6543
+    },
+     {
+      "date": "2016-05-19",
+      "points": 973.2,
+      "steps": 9426,
+      "calories": 2554.3962,
+      "activityCalories": 350.9,
+      "distance": 3.4979
+    },
+     {
+      "date": "2016-05-20",
+      "points": 918.4,
+      "steps": 9076,
+      "calories": 2530.4962,
+      "activityCalories": 331.2,
+      "distance": 3.3042
+    },
+     {
+      "date": "2016-05-21",
+      "points": 1593.2,
+      "steps": 15738,
+      "calories": 2824.4962,
+      "activityCalories": 574.5,
+      "distance": 5.6415
+    },
+     {
+      "date": "2016-05-22",
+      "points": 1192,
+      "steps": 11834,
+      "calories": 2649.6962,
+      "activityCalories": 429.8,
+      "distance": 4.2103
+    },
+     {
+      "date": "2016-05-23",
+      "points": 770,
+      "steps": 7636,
+      "calories": 2465.7962,
+      "activityCalories": 277.7,
+      "distance": 2.7514
+    },
+     {
+      "date": "2016-05-24",
+      "points": 622,
+      "steps": 6148,
+      "calories": 2401.2962,
+      "activityCalories": 224.3,
+      "distance": 2.2205
+    },
+     {
+      "date": "2016-05-25",
+      "points": 629.6,
+      "steps": 6238,
+      "calories": 2404.5962,
+      "activityCalories": 227,
+      "distance": 2.2561
+    },
+     {
+      "date": "2016-05-26",
+      "points": 227.6,
+      "steps": 2254,
+      "calories": 2229.4962,
+      "activityCalories": 82.1,
+      "distance": 0.8026
+    },
+     {
+      "date": "2016-05-27",
+      "points": 432,
+      "steps": 4248,
+      "calories": 2318.4962,
+      "activityCalories": 155.8,
+      "distance": 1.532
+    },
+     {
+      "date": "2016-05-28",
+      "points": 938,
+      "steps": 9320,
+      "calories": 2538.9962,
+      "activityCalories": 338.2,
+      "distance": 3.3389
+    },
+     {
+      "date": "2016-05-29",
+      "points": 1716.8,
+      "steps": 16996,
+      "calories": 2878.3962,
+      "activityCalories": 619.1,
+      "distance": 6.2615
+    },
+     {
+      "date": "2016-05-30",
+      "points": 986.4,
+      "steps": 9760,
+      "calories": 2560.0962,
+      "activityCalories": 355.7,
+      "distance": 3.5747
+    },
+     {
+      "date": "2016-05-31",
+      "points": 470,
+      "steps": 4634,
+      "calories": 2335.0962,
+      "activityCalories": 169.5,
+      "distance": 1.6641
+  },
+  {
+      "date": "2016-04-02",
+      "points": 251.2,
+      "steps": 2486,
+      "calories": 2239.7962,
+      "activityCalories": 90.6,
+      "distance": 0.8863
+    },
+     {
+      "date": "2016-04-03",
+      "points": 768.4,
+      "steps": 7616,
+      "calories": 2465.0962,
+      "activityCalories": 277.1,
+      "distance": 2.7071
+    },
+     {
+      "date": "2016-04-19",
+      "points": 24.4,
+      "steps": 244,
+      "calories": 2140.8962,
+      "activityCalories": 8.8,
+      "distance": 0.0864
+    },
+     {
+      "date": "2016-04-20",
+      "points": 728.4,
+      "steps": 7216,
+      "calories": 2447.6962,
+      "activityCalories": 262.7,
+      "distance": 2.5916
+    },
+     {
+      "date": "2016-04-21",
+      "points": 838,
+      "steps": 8304,
+      "calories": 2495.3962,
+      "activityCalories": 302.2,
+      "distance": 2.9935
+    },
+     {
+      "date": "2016-04-22",
+      "points": 815.6,
+      "steps": 8042,
+      "calories": 2485.6962,
+      "activityCalories": 294.1,
+      "distance": 2.8849
+    },
+     {
+      "date": "2016-04-23",
+      "points": 1016.8,
+      "steps": 10036,
+      "calories": 2573.3962,
+      "activityCalories": 366.7,
+      "distance": 3.6696
+    },
+     {
+      "date": "2016-04-24",
+      "points": 956,
+      "steps": 9498,
+      "calories": 2546.8962,
+      "activityCalories": 344.7,
+      "distance": 3.3976
+    },
+     {
+      "date": "2016-04-25",
+      "points": 1022,
+      "steps": 10132,
+      "calories": 2575.5962,
+      "activityCalories": 368.5,
+      "distance": 3.6283
+    },
+     {
+      "date": "2016-04-26",
+      "points": 921.6,
+      "steps": 9094,
+      "calories": 2531.8962,
+      "activityCalories": 332.3,
+      "distance": 3.2951
+    },
+     {
+      "date": "2016-04-27",
+      "points": 1077.6,
+      "steps": 10676,
+      "calories": 2599.7962,
+      "activityCalories": 388.6,
+      "distance": 3.862
+    },
+     {
+      "date": "2016-04-28",
+      "points": 887.6,
+      "steps": 8800,
+      "calories": 2517.0962,
+      "activityCalories": 320.1,
+      "distance": 3.1777
+    },
+     {
+      "date": "2016-04-29",
+      "points": 928.8,
+      "steps": 9202,
+      "calories": 2534.9962,
+      "activityCalories": 334.9,
+      "distance": 3.3116
+    },
+     {
+      "date": "2016-04-30",
+      "points": 488.8,
+      "steps": 4834,
+      "calories": 2343.2962,
+      "activityCalories": 176.3,
+      "distance": 1.7159
+    }
+]
