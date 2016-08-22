@@ -77,7 +77,11 @@ router.get('/blogentries', function(req, res) {
 });
 
 router.get('/misfitsub', function(req, res) {
-    res.json(req);
+    request({
+        url: req.SubscribeURL
+    }, function() {
+        res.json("Subscribed to " + req.SubscribeURL);
+    });
 });
 
 router.get('/test1', function(req, res) {
