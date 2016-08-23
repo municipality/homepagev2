@@ -64,28 +64,31 @@ export class Objectives implements AfterViewInit {
     }
 
     ngAfterViewInit () {
-        var panel;
         if (this.mobileService.isDesktop()) {
-
-            document.addEventListener("scroll", (e) => {
-                if(this.panels == null || this.panels.length == 0) {
+            if(this.container == null) {
+                document.addEventListener("scroll", function func(e) {
                     this.panels = document.getElementsByClassName("outro-panel");
-                    panel = this.panels[this.panels.length/2];
-                }
+                    var panel = this.panels[this.panels.length/2];
 
-                if (this.container == null) {
+
                     this.container = document.getElementsByClassName("outro-container")[0];
-                    this.container.className += " desktop"
-                }
 
-                if (panel.getBoundingClientRect().top > 0) {
-                    this.container.style["background-image"] = "url(images/outro1.jpg)";
-                }
-                else {
-                    this.container.style["background-image"] = "url(images/outro2.jpg)";
-                }
 
-            });
+                    if(this.container && !this.container.className.includes("desktop")) {
+                        this.container.className += " desktop";
+                    }
+
+                    if (this.container && panel && panel.getBoundingClientRect().top > 0) {
+                        this.container.style["background-image"] = "url(images/outro1.jpg)";
+                    }
+                    else if(this.container) {
+                        this.container.style["background-image"] = "url(images/outro2.jpg)";
+                    }
+
+
+                });
+            }
+
         }
 
     }

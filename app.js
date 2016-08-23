@@ -75,8 +75,9 @@ router.get('/blogentries', function(req, res) {
     });
 
 });
-
+var url;
 router.get('/misfitsub', function(req, res) {
+    url = req;
     request({
         url: req.SubscribeURL
     }, function() {
