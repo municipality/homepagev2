@@ -4,7 +4,7 @@ import {Http} from 'angular2/http';
 
 import AdventuresVars = require('./adventures.seasons');
 import {PresentationHeader} from './adventures.components';
-import {SeasonDefault} from './adventures.components';
+import {SeasonDefault, PhotoGallery} from './adventures.components';
 
 @Component ({
     selector : 'summer2016losangeles',
@@ -26,6 +26,7 @@ export class Summer2016LosAngeles {
 
     }
 }
+
 
 
 @Component ({
@@ -57,7 +58,8 @@ export class Summer2016LosAngeles {
 
 @RouteConfig([
     { path: '/', component: SeasonDefault, name: "SeasonDefault2", useAsDefault: true},
-    { path: '/LosAngeles', component: Summer2016LosAngeles, name: 'Summer2016LosAngeles'},
+    //{ path: '/LosAngeles', component: Summer2016LosAngeles, name: 'Summer2016LosAngeles'},
+    { path: '/LosAngeles', component: PhotoGallery, name: 'Summer2016LosAngeles', data: {id: "LA"}},
     { path: '/**', redirectTo: ['SeasonDefault2']}
 ])
 export class Summer2016 {

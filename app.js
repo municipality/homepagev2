@@ -75,14 +75,11 @@ router.get('/blogentries', function(req, res) {
     });
 
 });
-var url;
-router.get('/misfitsub', function(req, res) {
-    url = req;
-    request({
-        url: req.SubscribeURL
-    }, function() {
-        res.json("Subscribed to " + req.SubscribeURL);
-    });
+
+router.get('/adventurephotos', function(req, res) {
+    fs.readdir(__dirname + '/public/images/adventures/' + req.foldername, function(err, files) {
+        res.json(files);
+    }
 });
 
 router.get('/test1', function(req, res) {
