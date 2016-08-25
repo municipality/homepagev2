@@ -1,4 +1,4 @@
-import {Component, AfterViewInit, ViewChild} from 'angular2/core';
+import {Component, AfterViewInit, ViewChild} from '@angular/core';
 import {Objectives} from './objectives.component';
 
 @Component ({

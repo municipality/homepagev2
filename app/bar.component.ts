@@ -1,5 +1,5 @@
-import {Component, ViewChild, AfterViewInit} from 'angular2/core';
-import {ROUTER_DIRECTIVES, Router} from 'angular2/router';
+import {Component, ViewChild, AfterViewInit} from '@angular/core';
+import {ROUTER_DIRECTIVES, Router} from '@angular/router-deprecated';
 @Component ({
     selector : 'bar',
     directives: [ROUTER_DIRECTIVES],
@@ -7,7 +7,7 @@ import {ROUTER_DIRECTIVES, Router} from 'angular2/router';
         <div class="container" #container>
             <div [ngClass]="{'logo': i==0, 'icon': i!=0,
                              'active': router.isRouteActive(router.generate([item.name])) }"
-            *ngFor="#item of items; #i = index"
+            *ngFor="let item of items; #i = index"
             [routerLink]="[item.name]" (click)="click(item.name)">
                 <img *ngIf="i==0" src={{item.icon}}>
                 <div *ngIf="i!=0" class="icon-sym {{item.iconCls}}"></div>

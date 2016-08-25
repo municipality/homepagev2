@@ -1,16 +1,26 @@
 {
-  "name": "angular2-project",
-  "version": "0.0.0",
+  "name": "brian-homepage",
+  "version": "1.0.0",
   "scripts": {
     "start": "concurrently \"tsc -w\" \"node ./bin/www\" \"npm run watch-css\" \"npm run watch-mobile-css\"",
-    "postinstall": "typings install && tsc",
+    "postinstall": "typings install",
     "build-css": "node-sass --include-path scss scss/main.scss public/app/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "build-mobile-css": "node-sass --include-path scss scss/mobile.scss public/app/mobile.css",
     "watch-mobile-css": "nodemon -e scss -x \"npm run build-mobile-css\""
   },
+  "license": "ISC",
   "dependencies": {
-    "angular2": "2.0.0-beta.9",
+    "@angular/common": "2.0.0-rc.5",
+    "@angular/compiler": "2.0.0-rc.5",
+    "@angular/core": "2.0.0-rc.5",
+    "@angular/forms": "0.3.0",
+    "@angular/http": "2.0.0-rc.5",
+    "@angular/platform-browser": "2.0.0-rc.5",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.5",
+    "@angular/router": "3.0.0-rc.1",
+    "@angular/router-deprecated": "2.0.0-rc.2",
+    "@angular/upgrade": "2.0.0-rc.5",
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
     "debug": "~2.2.0",
@@ -18,20 +28,18 @@
     "es6-shim": "^0.33.3",
     "express": "~4.13.1",
     "morgan": "~1.6.1",
-    "node-sass": "^3.8.0",
-    "nodemon": "^1.9.2",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.2",
     "serve-favicon": "~2.3.0",
-    "systemjs": "0.19.24",
-    "typescript": "^1.8.0",
-    "typings": "^0.6.8",
-    "zone.js": "0.5.15",
-    "@angular/router": "3.0.0-rc.1"
+    "systemjs": "0.19.27",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
-    "node-sass": "^3.7.0",
-    "nodemon": "^1.9.2"
+    "node-sass": "^3.8.0",
+    "nodemon": "^1.9.2",
+    "typescript": "^1.8.10",
+    "typings": "^0.6.8"
   }
 }

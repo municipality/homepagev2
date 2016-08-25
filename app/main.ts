@@ -1,8 +1,8 @@
-import {bootstrap} from 'angular2/platform/browser';
-import {provide, Component, Injectable, AfterViewInit} from 'angular2/core';
-import {LocationStrategy, PathLocationStrategy, ROUTER_PROVIDERS} from 'angular2/router';
-import {ROUTER_DIRECTIVES, RouteConfig, Router} from 'angular2/router';
-import {HTTP_BINDINGS, HTTP_PROVIDERS} from 'angular2/http';
+import {bootstrap} from '@angular/platform-browser-dynamic';
+import {provide, Component, Injectable, AfterViewInit} from '@angular/core';
+import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
+import {ROUTER_DIRECTIVES, RouteConfig, Router} from '@angular/router-deprecated';
+import {HTTP_BINDINGS, HTTP_PROVIDERS} from '@angular/http';
 
 import {Bar} from './bar.component';
 import {Home} from './home';
@@ -51,4 +51,4 @@ class App implements AfterViewInit {
 
 
 
-bootstrap(App, [HTTP_PROVIDERS, HTTP_BINDINGS, MobileService, ...ROUTER_PROVIDERS, provide(LocationStrategy, {useClass: PathLocationStrategy})]);
+bootstrap(App, [HTTP_PROVIDERS, HTTP_BINDINGS, MobileService, ...ROUTER_PROVIDERS]);

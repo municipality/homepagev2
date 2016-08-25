@@ -1,5 +1,4 @@
-import {Component} from 'angular2/core';
-import {ActivatedRoute} from 'angular2/router';
+import {Component} from '@angular/core';
 
 @Component ({
     selector : 'presentation-header',
@@ -32,7 +31,7 @@ export class SeasonDefault {
 
 @Component ({
     template : `
-        <div *ngFor="#item of images">
+        <div *ngFor="let item of images">
 
         </div>
     `,
@@ -42,7 +41,7 @@ export class SeasonDefault {
 export class PhotoGallery {
     images;
     foldername;
-    constructor (route:ActivatedRoute) {
+    constructor () {
 
     }
 }

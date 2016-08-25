@@ -1,4 +1,4 @@
-import {Component, AfterViewInit, ViewChild, ElementRef} from 'angular2/core';
+import {Component, AfterViewInit, ViewChild, ElementRef} from '@angular/core';
 
 import {MobileService} from './mobile.service';
 import {DesignsService} from './designs.service';
@@ -17,7 +17,7 @@ import {DesignsService} from './designs.service';
             </div>
             <div class="projects-container">
                 <div class="projects-row">
-                <div *ngFor="#project of projects" class="project">
+                <div *ngFor="let project of projects" class="project">
                     <a href={{project.url}} target="_blank">
                         <img src="{{project.image}}">
                     </a>

@@ -1,6 +1,6 @@
-import {Component, Input} from 'angular2/core';
-import {ROUTER_DIRECTIVES, RouteConfig, Router, RouteParams} from 'angular2/router';
-import {Http} from 'angular2/http';
+import {Component, Input} from '@angular/core';
+import {ROUTER_DIRECTIVES, RouteConfig, Router, RouteParams} from '@angular/router-deprecated';
+import {Http} from '@angular/http';
 
 import AdventuresVars = require('./adventures.seasons');
 import {PresentationHeader} from './adventures.components';
@@ -37,7 +37,7 @@ export class Summer2016LosAngeles {
             <div class="header">
                 <h4>Adventure</h4>
             </div>
-            <div class="event" *ngFor="#adventure of listItems"
+            <div class="event" *ngFor="let adventure of listItems"
             [routerLink]="[adventure.path]"
             [ngClass]="{'active': router.isRouteActive(router.generate([adventure.path]))}">
                 <div class="event-name-container">

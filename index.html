@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Brian Lee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://file.myfontastic.com/U99wiG9NDEQzGym6VKtJxa/icons.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1201px)" href="/app/main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/app/main.css" />
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 1200px)" href="/app/mobile.css" />
+    <base href="/">
+    <!-- <link rel="icon" type="image/vnd.microsoft.icon"
+         href="app/favicon.ico" /> -->
+  </head>
+  <body>
+
+    <script>
+
+
+    </script>
+    <div id="app-loading-mask">
+         <div class="loading-tag">
+            <div class="loader"></div>
+         </div>
+     </div>
+    <app></app>
+  </body>
+  <!-- 1. Load libraries -->
+  <!-- IE required polyfills, in this exact order -->
+  <!-- 1. Load libraries -->
+ <!-- Polyfill(s) for older browsers -->
+<!-- 2. Configure SystemJS -->
+<script src="node_modules/core-js/client/shim.min.js"></script>
+<script src="node_modules/zone.js/dist/zone.js"></script>
+<script src="node_modules/reflect-metadata/Reflect.js"></script>
+<script src="node_modules/systemjs/dist/system.src.js"></script>
+<script src="systemjs.config.js"></script>
+<script>
+  System.import('../app').catch(function(err){ console.error(err); });
+</script>
+</html>

@@ -1,4 +1,4 @@
-import {Component, AfterViewInit} from 'angular2/core';
+import {Component, AfterViewInit} from '@angular/core';
 import {ScrollingService} from './scrolling.service';
 import {MobileService} from './mobile.service';
 

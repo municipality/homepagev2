@@ -5,13 +5,12 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var request = require('request');
-var $ = require('jquery');
 var fs = require('fs');
 
 //mongodb dependencies
-var mongo = require('mongodb');
-var monk = require('monk');
-var db = monk('mongodb://admin:maples@ds147995.mlab.com:47995/homepage');
+// var mongo = require('mongodb');
+// var monk = require('monk');
+// var db = monk('mongodb://admin:maples@ds147995.mlab.com:47995/homepage');
 
 var users = require('./routes/users');
 
@@ -24,6 +23,7 @@ app.use(compress());
 // expose node_modules to client app
 app.use(express.static(__dirname + "/node_modules/", { maxage: '7d' } ));
 app.use(express.static(__dirname + "/app/"));
+app.use(express.static(__dirname));
 app.use(express.static(__dirname + '/public/', { maxage: '7d' }));
 
 
@@ -34,7 +34,7 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
 
 // // Make our db accessible to our router
 // app.use(function(req,res,next){
@@ -79,21 +79,22 @@ router.get('/blogentries', function(req, res) {
 router.get('/adventurephotos', function(req, res) {
     fs.readdir(__dirname + '/public/images/adventures/' + req.foldername, function(err, files) {
         res.json(files);
-    }
-});
-
-router.get('/test1', function(req, res) {
-    var collection = db.get('usercollection');
-    collection.find({},{},function(e,docs){
-        res.json(docs);
     });
 });
 
+// router.get('/test1', function(req, res) {
+//     var collection = db.get('usercollection');
+//     collection.find({},{},function(e,docs){
+//         res.json(docs);
+//     });
+// });
+
 app.use('/api', router);
 
+//For routing, if no matching path, send it to angular2 to handle
 app.all('*', function(req, res) {
   console.log("[TRACE] Server 404 request:" + req.originalUrl);
-  res.status(200).sendFile(path.join(__dirname, 'public/index.html'));
+  res.status(200).sendFile(path.join(__dirname, 'index.html'));
 });
 
 

@@ -1,6 +1,6 @@
-import {Component, Input} from 'angular2/core';
-import {ROUTER_DIRECTIVES, RouteConfig, Router, RouteParams} from 'angular2/router';
-import {Http} from 'angular2/http';
+import {Component, Input} from '@angular/core';
+import {ROUTER_DIRECTIVES, RouteConfig, Router, RouteParams} from '@angular/router-deprecated';
+import {Http} from '@angular/http';
 
 import FashionVars = require('./fashion.seasons');
 import {Summer2016} from './summer2016';
@@ -19,7 +19,7 @@ import {SeasonDefault} from './fashion.components';
                 <div class="header">
                     <h4>Seasons</h4>
                 </div>
-                <div class="season" *ngFor="#season of seasons"
+                <div class="season" *ngFor="let season of seasons"
                 [routerLink]="[season.path]"
                 [ngClass]="{'active': router.isRouteActive(router.generate([season.path]))}">
                     <h3>{{season.name}}</h3>
