@@ -1,6 +1,7 @@
 import {Component, Input} from '@angular/core';
 import {ROUTER_DIRECTIVES, RouteConfig, Router, RouteParams} from '@angular/router-deprecated';
 import {Http} from '@angular/http';
+import {AdventureService} from './adventures.service';
 
 import AdventuresVars = require('./adventures.seasons');
 import {Summer2016} from './summer2016';
@@ -10,6 +11,7 @@ import {Fall2016} from './fall2016';
 
 @Component ({
     directives: [ROUTER_DIRECTIVES],
+    providers: [AdventureService],
     template : `
         <div class="adventures fadeIn">
             <div class="adventures-row">

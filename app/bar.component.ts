@@ -7,7 +7,7 @@ import {ROUTER_DIRECTIVES, Router} from '@angular/router-deprecated';
         <div class="container" #container>
             <div [ngClass]="{'logo': i==0, 'icon': i!=0,
                              'active': router.isRouteActive(router.generate([item.name])) }"
-            *ngFor="let item of items; #i = index"
+            *ngFor="let item of items; let i = index"
             [routerLink]="[item.name]" (click)="click(item.name)">
                 <img *ngIf="i==0" src={{item.icon}}>
                 <div *ngIf="i!=0" class="icon-sym {{item.iconCls}}"></div>

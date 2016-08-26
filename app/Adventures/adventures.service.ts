@@ -11,7 +11,7 @@ export class AdventureService {
     getPhotos(adventureFolderName) {
         let params = new URLSearchParams();
         params.set('foldername', adventureFolderName);
-        let url = document.location.origin + `api/adventurephotos`;
+        let url = document.location.origin + `/api/adventurephotos`;
         return this.http.get(url, {
                     search: params
                 }).map((response) => {

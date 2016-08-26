@@ -38,7 +38,7 @@ export class Summer2016LosAngeles {
                 <h4>Adventure</h4>
             </div>
             <div class="event" *ngFor="let adventure of listItems"
-            [routerLink]="[adventure.path]"
+            [routerLink]="[adventure.path, adventure.path]"
             [ngClass]="{'active': router.isRouteActive(router.generate([adventure.path]))}">
                 <div class="event-name-container">
                     <h3>{{adventure.display}}</h3>
@@ -59,7 +59,7 @@ export class Summer2016LosAngeles {
 @RouteConfig([
     { path: '/', component: SeasonDefault, name: "SeasonDefault2", useAsDefault: true},
     //{ path: '/LosAngeles', component: Summer2016LosAngeles, name: 'Summer2016LosAngeles'},
-    { path: '/LosAngeles', component: PhotoGallery, name: 'Summer2016LosAngeles', data: {id: "LA"}},
+    { path: '/LosAngeles', component: PhotoGallery, name: 'Summer2016LosAngeles'},
     { path: '/**', redirectTo: ['SeasonDefault2']}
 ])
 export class Summer2016 {

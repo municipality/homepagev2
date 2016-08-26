@@ -1,8 +1,9 @@
 import {bootstrap} from '@angular/platform-browser-dynamic';
-import {provide, Component, Injectable, AfterViewInit} from '@angular/core';
+import {provide, Component, Injectable, AfterViewInit, NgModule} from '@angular/core';
 import {ROUTER_PROVIDERS} from '@angular/router-deprecated';
 import {ROUTER_DIRECTIVES, RouteConfig, Router} from '@angular/router-deprecated';
 import {HTTP_BINDINGS, HTTP_PROVIDERS} from '@angular/http';
+
 
 import {Bar} from './bar.component';
 import {Home} from './home';

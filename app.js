@@ -77,7 +77,13 @@ router.get('/blogentries', function(req, res) {
 });
 
 router.get('/adventurephotos', function(req, res) {
-    fs.readdir(__dirname + '/public/images/adventures/' + req.foldername, function(err, files) {
+    //URLSearchParams are available at req.query.param_name_here
+    var foldername = req.query.foldername;
+    fs.readdir(__dirname + '/public/images/adventures/' + foldername, function(err, files) {
+        files.forEach(function(val, index, arr) {
+            files[index] = "images/adventures/" + val;
+        });
+        console.log(files);
         res.json(files);
     });
 });

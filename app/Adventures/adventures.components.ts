@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import {Router} from '@angular/router-deprecated';
+import {AdventureService} from './adventures.service';
 
 @Component ({
     selector : 'presentation-header',
@@ -31,17 +33,25 @@ export class SeasonDefault {
 
 @Component ({
     template : `
-        <div *ngFor="let item of images">
+        <div *ngFor="let item of photos" class="">
 
         </div>
     `,
-    selector : `photogallery`,
+    selector : `photogallery`
 })
 
-export class PhotoGallery {
-    images;
-    foldername;
-    constructor () {
 
+export class PhotoGallery {
+    photos : any[];
+    foldername : string;
+    constructor (private adventureService:AdventureService) {
+        //Workaround for getting router path
+        let url = document.location.pathname;
+        this.foldername = url.substring(url.lastIndexOf("/") + 1).toLowerCase();
+
+        //Call service to call api to get photos
+        this.adventureService.getPhotos(this.foldername).subscribe((response) => {
+            this.photos = response;
+        });
     }
 }
