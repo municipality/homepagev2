@@ -81,7 +81,7 @@ router.get('/adventurephotos', function(req, res) {
     var foldername = req.query.foldername;
     fs.readdir(__dirname + '/public/images/adventures/' + foldername, function(err, files) {
         files.forEach(function(val, index, arr) {
-            files[index] = "images/adventures/" + val;
+            files[index] = "images/adventures/" + foldername + "/"+ val;
         });
         console.log(files);
         res.json(files);

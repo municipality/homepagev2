@@ -33,8 +33,8 @@ export class SeasonDefault {
 
 @Component ({
     template : `
-        <div *ngFor="let item of photos" class="">
-
+        <div *ngFor="let item of photos" class="photo" tabindex="0" (click)="handleClick(item)">
+            <img src={{item}}>
         </div>
     `,
     selector : `photogallery`
@@ -52,6 +52,11 @@ export class PhotoGallery {
         //Call service to call api to get photos
         this.adventureService.getPhotos(this.foldername).subscribe((response) => {
             this.photos = response;
+            console.log(response);
         });
+    }
+
+    handleClick(item) {
+
     }
 }

@@ -637,6 +637,26 @@ bar {
     display: table-cell;
     height: 100%;
     vertical-align: top; }
+    .adventures .presentation-router-container photogallery .photo {
+      position: relative;
+      float: left;
+      width: 15em;
+      height: 15em;
+      margin: .2em;
+      cursor: pointer; }
+    .adventures .presentation-router-container photogallery .photo > img {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translate(0, -50%);
+      /* IE 9 */
+      transform: translate(0, -50%);
+      /* IE 10, Fx 16+, Op 12.1+ */
+      -o-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      width: 100%;
+      height: auto; }
   .adventures .presentation {
     height: 100%; }
     .adventures .presentation .presentation-header {
