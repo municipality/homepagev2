@@ -6,6 +6,23 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var request = require('request');
 var fs = require('fs');
+var Flickr = require('flickrapi');
+var flickrOptions = {
+    api_key : "f020644253602c840d063034581dabf6",
+    secret: "8eaf74a00c961534",
+    user_id: "143450202@N04"
+};
+
+var flickrAlbums = {
+    losangeles: "72157670309334154"
+};
+
+var flickr;
+
+Flickr.tokenOnly(flickrOptions, function(error, f) {
+  // we can now use "flickr" as our API object
+  flickr = f;
+});
 
 //mongodb dependencies
 // var mongo = require('mongodb');
@@ -76,15 +93,43 @@ router.get('/blogentries', function(req, res) {
 
 });
 
+router.get('/adventurealbums', function(req, res) {
+    //URLSearchParams are available at req.query.param_name_here
+    // var foldername = req.query.foldername;
+    // fs.readdir(__dirname + '/public/images/adventures/' + foldername, function(err, files) {
+    //     files.forEach(function(val, index, arr) {
+    //         files[index] = "images/adventures/" + foldername + "/"+ val;
+    //     });
+    //     console.log(files);
+    //     res.json(files);
+    // });
+    flickr.photosets.getList({
+        api_key: flickrOptions.api_key,
+        user_id: flickrOptions.user_id,
+        photoset_id: flickrAlbums["losangeles"]
+    }, function(err, result) {
+        debugger
+        console.log(result);
+    });
+});
+
 router.get('/adventurephotos', function(req, res) {
     //URLSearchParams are available at req.query.param_name_here
-    var foldername = req.query.foldername;
-    fs.readdir(__dirname + '/public/images/adventures/' + foldername, function(err, files) {
-        files.forEach(function(val, index, arr) {
-            files[index] = "images/adventures/" + foldername + "/"+ val;
-        });
-        console.log(files);
-        res.json(files);
+    // var foldername = req.query.foldername;
+    // fs.readdir(__dirname + '/public/images/adventures/' + foldername, function(err, files) {
+    //     files.forEach(function(val, index, arr) {
+    //         files[index] = "images/adventures/" + foldername + "/"+ val;
+    //     });
+    //     console.log(files);
+    //     res.json(files);
+    // });
+    flickr.photosets.getPhotos({
+        api_key: flickrOptions.api_key,
+        user_id: flickrOptions.user_id,
+        photoset_id: flickrAlbums["losangeles"]
+    }, function(err, result) {
+        debugger
+        console.log(result);
     });
 });
 
