@@ -59,7 +59,8 @@ export class Summer2016LosAngeles {
 @RouteConfig([
     { path: '/', component: SeasonDefault, name: "SeasonDefault2", useAsDefault: true},
     //{ path: '/LosAngeles', component: Summer2016LosAngeles, name: 'Summer2016LosAngeles'},
-    { path: '/LosAngeles', component: PhotoGallery, name: 'Summer2016LosAngeles'},
+    { path: "/AFXPhotoshoot", component: PhotoGallery, name: 'Summer2016AFXPhotoshoot', data: {album: "afxphotoshoot"}},
+    { path: '/LosAngeles', component: PhotoGallery, name: 'Summer2016LosAngeles', data: {album: "losangeles"}},
     { path: '/**', redirectTo: ['SeasonDefault2']}
 ])
 export class Summer2016 {
@@ -71,6 +72,5 @@ export class Summer2016 {
         this.seasons = AdventuresVars.seasonItems;
         this.season = "Summer2016";
         this.listItems = this.seasons[this.season];
-
     }
 }

@@ -14,7 +14,8 @@ var flickrOptions = {
 };
 
 var flickrAlbums = {
-    losangeles: "72157670309334154"
+    losangeles: "72157670309334154",
+    afxphotoshoot: "72157672539817791"
 };
 
 var flickr;
@@ -103,13 +104,16 @@ router.get('/adventurealbums', function(req, res) {
     //     console.log(files);
     //     res.json(files);
     // });
+
     flickr.photosets.getList({
         api_key: flickrOptions.api_key,
         user_id: flickrOptions.user_id,
-        photoset_id: flickrAlbums["losangeles"]
+        photoset_id: flickrAlbums[album]
     }, function(err, result) {
-        debugger
-        console.log(result);
+        if(!err) {
+            res.json(result);
+        }
+
     });
 });
 
@@ -123,13 +127,16 @@ router.get('/adventurephotos', function(req, res) {
     //     console.log(files);
     //     res.json(files);
     // });
+    var album = req.query.album;
     flickr.photosets.getPhotos({
         api_key: flickrOptions.api_key,
         user_id: flickrOptions.user_id,
-        photoset_id: flickrAlbums["losangeles"]
+        photoset_id: flickrAlbums[album]
     }, function(err, result) {
-        debugger
-        console.log(result);
+        if(!err) {
+            res.json(result);
+        }
+
     });
 });
 

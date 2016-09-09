@@ -18,6 +18,10 @@ export var seasonItems = {
             path: "Summer2016LosAngeles",
             dateStart: "July 1",
             dateEnd: "July 3"
+        },
+        {
+            display: "AFX Photoshoot",
+            path: "Summer2016AFXPhotoshoot"
         }
     ],
     Fall2016 : [
